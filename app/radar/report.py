@@ -83,12 +83,38 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                 "gsc_available",
                 "matched_gsc_queries",
                 "gsc_evidence_rows",
+                # Phase 1.5D: Site Coverage & Content Gap columns (sibling of the
+                # GSC search-demand columns; strictly separate evidence class).
+                "site_coverage",
+                "content_gap_status",
+                "coverage_confidence",
+                "coverage_sources",
+                "matched_pages",
+                "problem_coverage_evidence",
             ]
         )
         for s in signals:
             b = getattr(s, "content_brief", None)
             se = getattr(s, "search_evidence", None)
             se_dict = se.to_dict() if se is not None else None
+            sc = getattr(s, "site_coverage", None)
+            sc_dict = sc.to_dict() if sc is not None else None
+            if sc_dict:
+                _pce = sc_dict.get("problem_coverage_evidence") or {}
+                pce_str = (
+                    f"page_existence={_pce.get('page_existence')}; "
+                    f"topical_match={_pce.get('topical_match')}; "
+                    f"problem_match={_pce.get('problem_match')}; "
+                    f"performance={_pce.get('performance') or '-'}"
+                )
+                mp_str = "; ".join(
+                    f'{m["url"]} [{m["match_tier"]}/{m["source"]}/'
+                    f'perf={m["performance"] or "-"}]'
+                    for m in sc_dict.get("matched_pages", [])
+                )
+            else:
+                pce_str = ""
+                mp_str = ""
             w.writerow(
                 [
                     s.priority.value,
@@ -117,6 +143,13 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                     (se_dict["gsc_available"] if se_dict else ""),
                     ("; ".join(se_dict["matched_queries"]) if se_dict else ""),
                     (len(se_dict["evidence"]) if se_dict else 0),
+                    # Phase 1.5D values (empty when no site-coverage evidence).
+                    (sc_dict["site_coverage"] if sc_dict else ""),
+                    (sc_dict["content_gap_status"] if sc_dict else ""),
+                    (sc_dict["coverage_confidence"] if sc_dict else ""),
+                    ("; ".join(sc_dict["coverage_sources"]) if sc_dict else ""),
+                    mp_str,
+                    pce_str,
                 ]
             )
 
@@ -266,6 +299,68 @@ def write_markdown(path, report: RadarReport) -> None:
             lines.append(
                 "  - NOTE: GSC was queried successfully but no matching query "
                 "evidence was found. This is NOT evidence of zero search demand."
+            )
+        lines.append("")
+
+    # Phase 1.5D: Site Coverage & Content Gap Validation (problem signals only).
+    # Terminology is deliberately precise: "unknown" means the evidence required
+    # to decide coverage was NOT available in this run. It MUST NOT be read as
+    # "no content exists" or "the topic is uncovered". Coverage evidence is kept
+    # strictly separate from the GSC search-demand evidence above.
+    lines.append("## Site Coverage & Content Gap")
+    lines.append("")
+    lines.append(
+        "_Deterministic site-coverage and content-gap check for problem signals. "
+        "Coverage is judged from first-party GSC page evidence (when available) "
+        "and the site sitemap inventory. \"unknown\" means the evidence required "
+        "to decide coverage was not available in this run \u2014 it is NOT a "
+        "statement that no content exists or that the topic is uncovered._"
+    )
+    lines.append("")
+    coverage_signals = [s for s in problems if getattr(s, "site_coverage", None) is not None]
+    if not coverage_signals:
+        lines.append("_No problem signals carried site-coverage evidence in this run._")
+        lines.append("")
+    for s in coverage_signals:
+        sc = s.site_coverage
+        sc_dict = sc.to_dict()
+        rank = s.opportunity_rank or 0
+        title = s.content_brief.recommended_title if s.content_brief else s.title
+        lines.append(f"### CONTENT OPPORTUNITY #{rank} \u2014 Site Coverage")
+        lines.append("")
+        lines.append(f"- Recommended Title: {title}")
+        lines.append(f"- Site Coverage: {sc_dict['site_coverage']}")
+        lines.append(f"- Content Gap Status: {sc_dict['content_gap_status']}")
+        lines.append(f"- Coverage Confidence: {sc_dict['coverage_confidence']}")
+        sources = sc_dict["coverage_sources"]
+        lines.append(f"- Coverage Sources: {('; '.join(sources)) if sources else 'none'}")
+        mp = sc_dict["matched_pages"]
+        if mp:
+            lines.append(f"- Matched Pages ({len(mp)}):")
+            for m in mp:
+                lines.append(
+                    f"  - {m['url']} | tier: {m['match_tier']} | source: {m['source']} "
+                    f"| performance: {m['performance'] or '-'} "
+                    f"| position: {m['position']:.2f}"
+                )
+        pce = sc_dict["problem_coverage_evidence"] or {}
+        lines.append(
+            f"- Problem Coverage: page_existence={pce.get('page_existence')}; "
+            f"topical_match={pce.get('topical_match')}; "
+            f"problem_match={pce.get('problem_match')}; "
+            f"performance={pce.get('performance') or '-'}"
+        )
+        if sc_dict["site_coverage"] == "unknown":
+            lines.append(
+                "  - NOTE: Coverage could not be determined because no site "
+                "inventory and no first-party GSC page evidence were available. "
+                "This does NOT mean the topic is uncovered or that no content "
+                "exists \u2014 absence of evidence is not evidence of absence."
+            )
+        elif sc_dict.get("multiple_competing_pages"):
+            lines.append(
+                "  - NOTE: Multiple pages appear to compete for the same query. "
+                "Consider consolidating existing content rather than creating new."
             )
         lines.append("")
 

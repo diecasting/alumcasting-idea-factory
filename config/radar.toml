@@ -175,3 +175,51 @@ property = "sc-domain:alumcasting.com"
 lookback_days = 90
 # Use only finalized (post-revision) data to avoid partially-revised trailing days.
 data_state = "final"
+
+# ---------------------------------------------------------------------------
+# Site Coverage & Content Gap Validation (Phase 1.5D) — DISABLED-by-default
+# enrichment, fully offline / failure-tolerant.
+#
+# This layer answers ONLY "does our own site already cover this problem, and how
+# well?" It is strictly SEPARATE from the GSC search-demand evidence above:
+#   * Site coverage == first-party evidence about OUR pages (inventory + GSC
+#     page-level performance for the verified property).
+#   * Search demand == first-party evidence about QUERY demand for the property.
+# Neither is third-party search volume, market demand, CPC, or competition.
+#
+# Safety model (from the Phase 1.5D non-negotiable principles):
+#   * GSC remains OPTIONAL and DISABLED by default (see [gsc] above). The
+#     sitemap adapter here never creates secrets / OAuth / credentials.
+#   * If the sitemap cannot be fetched/parsed (404/5xx/timeout/DNS/TLS/malformed/
+#     empty) the inventory resolves to "unavailable" and every problem signal's
+#     site_coverage / content_gap_status / coverage_confidence becomes "unknown".
+#   * A missing inventory is NEVER interpreted as "no content exists". A sitemap
+#     URL existing is NEVER interpreted as "the page answers the specific
+#     problem" (page existence != problem coverage). Coverage stays "unknown"
+#     unless GSC page evidence proves topical + problem match.
+[site_coverage]
+# Master switch for the site-coverage layer. Independent of [gsc].enabled.
+# Even when true, the layer is non-blocking: any failure yields "unknown".
+enabled = true
+# How the site URL inventory is obtained. Only "sitemap" is implemented. A
+# future "local_content" source would supply page title/headings/body so the
+# matcher could assert topical/problem match; sitemap-only cannot, by design.
+inventory_source = "sitemap"
+# Canonical sitemap URL for the verified property. Fetched with a stdlib GET
+# transport (no third-party HTTP library). Supports sitemap index / nested
+# sitemaps. Reachable URL is NOT required for the layer to run safely.
+sitemap_url = "https://alumcasting.com/sitemap.xml"
+# Canonical URL normalization policy for the alumcasting.com property.
+canonical_host = "alumcasting.com"
+strip_www = true
+strip_trailing_slash = true
+# Determinism of candidate->page matching (used when real page content/title
+# metadata is available). Jaccard token-overlap threshold; only exact-norm or
+# overlap >= this value counts as a match. No fuzzy/AI matching.
+token_overlap_threshold = 0.60
+# Performance classification boundary for GSC page evidence. A page whose
+# position <= this value is "strong"; above it (or unknown) is "weak". This
+# ONLY affects the performance dimension (referenced vs. create-new) and is kept
+# strictly separate from the coverage decision.
+position_weak_threshold = 20.0
+

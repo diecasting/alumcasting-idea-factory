@@ -41,6 +41,12 @@ from app.radar.sources.reddit import RedditSource
 from app.radar.sources.rss import RSSSource
 from app.radar.sources.gsc import build_gsc_adapter
 from app.radar.search_evidence import attach_search_evidence_to_signals, query_gsc_rows
+from app.radar.site_coverage import (
+    TRANSPORT_FAILURE,
+    attach_site_coverage_to_signals,
+    build_site_coverage_adapter,
+    default_sitemap_transport,
+)
 
 # Curated, public subreddits relevant to the tracked topics. Missing/private
 # subreddits simply yield no signals (collection is failure-tolerant).
@@ -104,6 +110,7 @@ def run_pipeline(
     dry_run: bool = False,
     generated_at: datetime | None = None,
     fixtures_dir=None,
+    site_coverage_transport=None,
 ) -> RadarReport:
     generated_at = generated_at or datetime.now(timezone.utc)
 
@@ -157,6 +164,33 @@ def run_pipeline(
         for s in deduped:
             s.search_evidence = None
 
+    # Phase 1.5D: Site Coverage & Content Gap Validation.
+    # OPTIONAL and NON-BLOCKING. Wrapped entirely in try/except so that any
+    # failure (transport, XML parse, config) resolves to "unknown" coverage and
+    # never breaks the radar pipeline. No score, ContentBrief, ranking, or
+    # report schema is altered.
+    #
+    # Transport injection policy (offline-safe by default):
+    #   * dry_run / CI / explicit None  -> a non-networking stub that returns
+    #     (404, "") so NO network request is ever made and inventory resolves to
+    #     "unavailable".
+    #   * live production run           -> default_sitemap_transport (real GET),
+    #     still non-blocking (404/5xx/timeout -> inventory "unavailable").
+    try:
+        _sc_transport = (
+            site_coverage_transport
+            if site_coverage_transport is not None
+            else (lambda u, t=15.0: (404, ""))
+        )
+        _sc_adapter = build_site_coverage_adapter(cfg, transport=_sc_transport)
+        _inv_urls, _inv_status = _sc_adapter.collect()
+        attach_site_coverage_to_signals(deduped, _inv_urls, _inv_status, cfg)
+    except Exception:
+        # Defensive: site-coverage enrichment must never break the radar. Every
+        # signal simply keeps site_coverage = None (reported as "unknown").
+        for s in deduped:
+            s.site_coverage = None
+
     deduped.sort(key=lambda s: (PRIORITY_RANK.get(s.priority, 9), -s.relevance_score))
 
     report = build_report(deduped, generated_at=generated_at)
@@ -181,7 +215,15 @@ def main(argv=None) -> int:
     parser.add_argument("--out-dir", default=".", help="Output directory (default: repo root)")
     args = parser.parse_args(argv)
 
-    report = run_pipeline(out_dir=args.out_dir, dry_run=args.dry_run)
+    # Live production runs may fetch the sitemap (non-blocking; failure ->
+    # inventory "unavailable"). Dry-run/CI injects a non-networking stub so no
+    # network call is ever made.
+    sc_transport = None if args.dry_run else default_sitemap_transport
+    report = run_pipeline(
+        out_dir=args.out_dir,
+        dry_run=args.dry_run,
+        site_coverage_transport=sc_transport,
+    )
 
     print("Content Opportunity Radar complete")
     print(f"  raw collected : {report.total_raw}")

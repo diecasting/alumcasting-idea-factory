@@ -118,6 +118,12 @@ class NormalizedSignal:
     # SearchEvidence object (status + matched GSC rows) or None. Never affects
     # any score.
     search_evidence: Any = None
+    # Phase 1.5D: Site Coverage & Content Gap evidence (sibling of content_brief
+    # and search_evidence). Attached only to problem signals. None for
+    # non-problem signals. Carries a SiteCoverageEvidence object or None. This is
+    # a SEPARATE evidence class from search-demand evidence and never affects
+    # any score, ContentBrief, or ranking.
+    site_coverage: Any = None
 
     def to_dict(self) -> dict:
         brief = None
@@ -149,6 +155,15 @@ class NormalizedSignal:
             "search_evidence": (
                 self.search_evidence.to_dict()
                 if getattr(self, "search_evidence", None) is not None
+                else None
+            ),
+            # Phase 1.5D: Site Coverage & Content Gap evidence. Emitted as a
+            # sibling of search_evidence. Always None-safe: a problem signal
+            # with no site-coverage evidence still serializes to None here, so
+            # prior JSON shapes for signals without coverage stay identical.
+            "site_coverage": (
+                self.site_coverage.to_dict()
+                if getattr(self, "site_coverage", None) is not None
                 else None
             ),
         }
