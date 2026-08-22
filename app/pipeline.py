@@ -18,7 +18,7 @@ Intended data flow (full system, built incrementally):
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from app.models import Opportunity
@@ -60,7 +60,7 @@ def run_pipeline() -> dict:
     opportunities: list[Opportunity] = []
 
     report = {
-        "generated_at": datetime.now(datetime.UTC).isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "phase": "Phase 0",
         "signals_collected": len(signals),
         "opportunities_found": len(opportunities),
