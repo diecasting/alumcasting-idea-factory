@@ -79,10 +79,16 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                 "url",
                 "source",
                 "published_at",
+                "search_demand_status",
+                "gsc_available",
+                "matched_gsc_queries",
+                "gsc_evidence_rows",
             ]
         )
         for s in signals:
             b = getattr(s, "content_brief", None)
+            se = getattr(s, "search_evidence", None)
+            se_dict = se.to_dict() if se is not None else None
             w.writerow(
                 [
                     s.priority.value,
@@ -107,6 +113,10 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                     s.url,
                     s.source,
                     _iso(s.published_at),
+                    (se_dict["search_demand_status"] if se_dict else ""),
+                    (se_dict["gsc_available"] if se_dict else ""),
+                    ("; ".join(se_dict["matched_queries"]) if se_dict else ""),
+                    (len(se_dict["evidence"]) if se_dict else 0),
                 ]
             )
 
@@ -198,6 +208,65 @@ def write_markdown(path, report: RadarReport) -> None:
         lines.append(f"- Source: {s.source}")
         if s.url:
             lines.append(f"- URL: {s.url}")
+        lines.append("")
+
+    # Phase 1.5C: First-party GSC search-demand evidence (problem signals only).
+    # Terminology is deliberately precise: GSC impressions are FIRST-PARTY
+    # performance data for the verified property and are NOT third-party search
+    # volume or market demand.
+    lines.append("## Search Demand Evidence")
+    lines.append("")
+    lines.append(
+        "_First-party Google Search Console (GSC) evidence for the verified "
+        "property. GSC impressions reflect performance for this property only "
+        "\u2014 they are NOT third-party search volume and must not be read as "
+        "total market demand. A query absent from GSC only means no matching "
+        "first-party evidence was retrieved for the property / window._"
+    )
+    lines.append("")
+    evidence_signals = [s for s in problems if getattr(s, "search_evidence", None) is not None]
+    if not evidence_signals:
+        lines.append("_No problem signals carried GSC search evidence in this run._")
+        lines.append("")
+    for s in evidence_signals:
+        se = s.search_evidence
+        se_dict = se.to_dict()
+        rank = s.opportunity_rank or 0
+        title = (se_dict.get("matched_queries") and se_dict["matched_queries"]) or (
+            s.content_brief.recommended_title if s.content_brief else s.title
+        )
+        lines.append(f"### CONTENT OPPORTUNITY #{rank} \u2014 Search Demand")
+        lines.append("")
+        lines.append(f"- Recommended Title: {s.content_brief.recommended_title if s.content_brief else s.title}")
+        status = se_dict["search_demand_status"]
+        lines.append(f"- Search Demand Status: {status}")
+        lines.append(f"- GSC Available: {'yes' if se_dict['gsc_available'] else 'no'}")
+        matched = se_dict["matched_queries"]
+        if matched:
+            lines.append(f"- Matching GSC Queries ({len(matched)}):")
+            for q in matched:
+                lines.append(f"  - {q}")
+        else:
+            lines.append("- Matching GSC Queries: none")
+        ev = se_dict["evidence"]
+        if ev:
+            lines.append(f"- First-party GSC evidence for this property ({len(ev)} row(s)):")
+            for e in ev:
+                lines.append(
+                    f"  - query: \"{e['query']}\" | page: {e['page'] or '(property)'} "
+                    f"| impressions: {e['impressions']} | clicks: {e['clicks']} "
+                    f"| ctr: {e['ctr']:.4f} | position: {e['position']:.2f}"
+                )
+        if status == "unknown":
+            lines.append(
+                "  - NOTE: No first-party GSC evidence was retrieved (GSC disabled "
+                "or unavailable). This does NOT imply zero market demand."
+            )
+        elif status == "not_validated":
+            lines.append(
+                "  - NOTE: GSC was queried successfully but no matching query "
+                "evidence was found. This is NOT evidence of zero search demand."
+            )
         lines.append("")
 
     order = [t for t in TOPIC_ORDER if t in report.by_topic]

@@ -39,6 +39,8 @@ from app.radar.scoring import load_config, rank_opportunities, score_signal
 from app.radar.brief import generate_content_briefs
 from app.radar.sources.reddit import RedditSource
 from app.radar.sources.rss import RSSSource
+from app.radar.sources.gsc import build_gsc_adapter
+from app.radar.search_evidence import attach_search_evidence_to_signals, query_gsc_rows
 
 # Curated, public subreddits relevant to the tracked topics. Missing/private
 # subreddits simply yield no signals (collection is failure-tolerant).
@@ -133,6 +135,27 @@ def run_pipeline(
 
     # Phase 1.3: Content Opportunity Brief generation (problem signals only).
     generate_content_briefs(deduped, cfg)
+
+    # Phase 1.5C: candidate-query matching / first-party GSC search evidence.
+    # OPTIONAL and NON-BLOCKING. GSC is disabled by default, so this resolves to
+    # an "unknown" search-demand status for every problem signal and never makes
+    # a network request. Any failure here is swallowed so the radar keeps
+    # running. No score, ContentBrief, ranking, or report schema is altered.
+    try:
+        _gsc_adapter = build_gsc_adapter(cfg)
+        _rows, _gstatus, _dstart, _dend = query_gsc_rows(_gsc_adapter)
+        attach_search_evidence_to_signals(
+            deduped,
+            _rows,
+            _gstatus,
+            date_start=_dstart,
+            date_end=_dend,
+            source=_gsc_adapter.name,
+        )
+    except Exception:
+        # Defensive: GSC enrichment must never break the radar pipeline.
+        for s in deduped:
+            s.search_evidence = None
 
     deduped.sort(key=lambda s: (PRIORITY_RANK.get(s.priority, 9), -s.relevance_score))
 

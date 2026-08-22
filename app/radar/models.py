@@ -113,6 +113,11 @@ class NormalizedSignal:
     score_reasons: list = field(default_factory=list)
     # Phase 1.3: Content Opportunity Brief (attached only to problem signals).
     content_brief: Any = None
+    # Phase 1.5C: First-party GSC search-demand evidence (sibling of content_brief).
+    # Attached only to problem signals. None for non-problem signals. Carries a
+    # SearchEvidence object (status + matched GSC rows) or None. Never affects
+    # any score.
+    search_evidence: Any = None
 
     def to_dict(self) -> dict:
         brief = None
@@ -141,6 +146,11 @@ class NormalizedSignal:
             "opportunity_rank": self.opportunity_rank,
             "score_reasons": self.score_reasons,
             "content_brief": brief,
+            "search_evidence": (
+                self.search_evidence.to_dict()
+                if getattr(self, "search_evidence", None) is not None
+                else None
+            ),
         }
 
 
