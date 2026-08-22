@@ -67,6 +67,14 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                 "is_problem_signal",
                 "opportunity_rank",
                 "score_reasons",
+                "audience",
+                "search_intent",
+                "recommended_title",
+                "core_question",
+                "content_angle",
+                "priority_band",
+                "supporting_questions",
+                "suggested_outline",
                 "title",
                 "url",
                 "source",
@@ -74,6 +82,7 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
             ]
         )
         for s in signals:
+            b = getattr(s, "content_brief", None)
             w.writerow(
                 [
                     s.priority.value,
@@ -86,6 +95,14 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                     s.is_problem_signal,
                     s.opportunity_rank if s.opportunity_rank is not None else "",
                     "; ".join(s.score_reasons),
+                    b.audience if b else "",
+                    b.search_intent if b else "",
+                    b.recommended_title if b else "",
+                    b.core_question if b else "",
+                    b.content_angle if b else "",
+                    b.priority if b else "",
+                    "; ".join(b.supporting_questions) if b else "",
+                    "; ".join(b.suggested_outline) if b else "",
                     s.title,
                     s.url,
                     s.source,
@@ -144,6 +161,41 @@ def write_markdown(path, report: RadarReport) -> None:
         lines.append(f"- Source: {s.source}")
         if s.published_at:
             lines.append(f"- Published: {_iso(s.published_at)}")
+        if s.url:
+            lines.append(f"- URL: {s.url}")
+        lines.append("")
+
+    # Phase 1.3: Content Opportunity Briefs (problem signals only, ranked).
+    briefs = [s for s in problems if getattr(s, "content_brief", None) is not None]
+    lines.append("## Content Opportunity Briefs")
+    lines.append("")
+    if not briefs:
+        lines.append("_No problem signals met the opportunity threshold in this window._")
+        lines.append("")
+    for s in briefs:
+        b = s.content_brief
+        rank = s.opportunity_rank or 0
+        tlabel = (s.topic or "uncategorized").replace("_", " ").title()
+        lines.append(f"### CONTENT OPPORTUNITY #{rank}")
+        lines.append("")
+        lines.append(f"- Title: {b.recommended_title}")
+        lines.append(f"- Topic: {tlabel}")
+        lines.append(f"- Signal Type: {s.signal_type.value.replace('_', ' ').title()}")
+        lines.append(f"- Audience: {b.audience}")
+        lines.append(f"- Search Intent: {b.search_intent}")
+        lines.append(f"- Problem: {b.problem}")
+        lines.append(f"- Core Question: {b.core_question}")
+        lines.append(f"- Content Angle: {b.content_angle}")
+        lines.append(f"- Priority: {b.priority}")
+        if b.supporting_questions:
+            lines.append("- Supporting Questions:")
+            for i, q in enumerate(b.supporting_questions, start=1):
+                lines.append(f"  {i}. {q}")
+        if b.suggested_outline:
+            lines.append("- Suggested Outline:")
+            for i, step in enumerate(b.suggested_outline, start=1):
+                lines.append(f"  {i}. {step}")
+        lines.append(f"- Source: {s.source}")
         if s.url:
             lines.append(f"- URL: {s.url}")
         lines.append("")

@@ -36,6 +36,7 @@ from app.radar.report import (
     write_markdown,
 )
 from app.radar.scoring import load_config, rank_opportunities, score_signal
+from app.radar.brief import generate_content_briefs
 from app.radar.sources.reddit import RedditSource
 from app.radar.sources.rss import RSSSource
 
@@ -130,11 +131,15 @@ def run_pipeline(
         score_signal(n, cfg)
     rank_opportunities(deduped)
 
+    # Phase 1.3: Content Opportunity Brief generation (problem signals only).
+    generate_content_briefs(deduped, cfg)
+
     deduped.sort(key=lambda s: (PRIORITY_RANK.get(s.priority, 9), -s.relevance_score))
 
     report = build_report(deduped, generated_at=generated_at)
     report.total_raw = len(raw)
     report.total_normalized = len(normalized)
+    report.total_briefs = sum(1 for s in deduped if getattr(s, "content_brief", None) is not None)
 
     out = Path(out_dir)
     write_json(out / "data" / "raw_signals.json", raw)

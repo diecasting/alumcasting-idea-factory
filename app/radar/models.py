@@ -9,7 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Optional
+from typing import Any, Optional
 
 
 def _iso(dt: Optional[datetime]) -> Optional[str]:
@@ -111,8 +111,13 @@ class NormalizedSignal:
     is_problem_signal: bool = False
     opportunity_rank: Optional[int] = None
     score_reasons: list = field(default_factory=list)
+    # Phase 1.3: Content Opportunity Brief (attached only to problem signals).
+    content_brief: Any = None
 
     def to_dict(self) -> dict:
+        brief = None
+        if getattr(self, "content_brief", None) is not None:
+            brief = self.content_brief.to_dict()
         return {
             "id": self.id,
             "source": self.source,
@@ -135,6 +140,7 @@ class NormalizedSignal:
             "is_problem_signal": self.is_problem_signal,
             "opportunity_rank": self.opportunity_rank,
             "score_reasons": self.score_reasons,
+            "content_brief": brief,
         }
 
 
@@ -148,6 +154,7 @@ class RadarReport:
     total_relevant: int = 0
     total_deduped: int = 0
     total_problem: int = 0
+    total_briefs: int = 0
     by_topic: dict = field(default_factory=dict)
     signals: list = field(default_factory=list)
 
@@ -159,6 +166,7 @@ class RadarReport:
             "total_relevant": self.total_relevant,
             "total_deduped": self.total_deduped,
             "total_problem": self.total_problem,
+            "total_briefs": self.total_briefs,
             "by_topic": self.by_topic,
             "signals": [s.to_dict() for s in self.signals],
         }

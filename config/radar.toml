@@ -40,6 +40,12 @@ problem_weight = 50
 heat_weight = 25
 relevance_weight = 25
 
+# Priority band for content briefs (Phase 1.3), derived from opportunity_score.
+# Does NOT change opportunity_score itself.
+[priority]
+high_threshold = 50      # opportunity_score >= 50 -> high
+medium_threshold = 30    # 30 <= opportunity_score < 50 -> medium; < 30 -> low
+
 # Problem indicators. Single-quoted regex strings (TOML literal strings, so the
 # backslashes are read literally by Python's `re`). These are NOT the relevance
 # keywords in relevance.py -- they measure *problem intent* for scoring only.
