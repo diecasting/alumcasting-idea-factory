@@ -1,11 +1,26 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-08-22T03:15:38.163392+00:00
+Generated: 2026-08-22T06:43:55.358881+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
 - Relevant (after filtering): 12
 - After deduplication: 12
+
+## Problem Signals
+
+- Raw signals: 110
+- Relevant signals: 12
+- Problem signals: 0
+- Problem signal rate: 0.0%
+
+## Top Content Opportunities
+
+_No problem signals met the opportunity threshold in this window._
+
+## Content Opportunity Briefs
+
+_No problem signals met the opportunity threshold in this window._
 
 ## Casting (1)
 
