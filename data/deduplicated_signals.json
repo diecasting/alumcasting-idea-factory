@@ -1,0 +1,231 @@
+[
+  {
+    "id": "c3966bc5b100c171",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Modular jet spindles enable high-speed machining with small tools",
+    "text": "Modular jet spindles enable high-speed machining with small tools. ISCAR has introduced SPINJET modular jet spindles with high-speed performance, low runout, and plug-and-play installation for CNC machines.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-jet-spindles-enable-high-speed-machining-with-small-tools",
+    "author": null,
+    "published_at": "2026-08-06T06:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551795+00:00",
+    "signal_type": "tooling_problem",
+    "priority": "high",
+    "relevance_score": 0.63,
+    "matched_keywords": [
+      "cnc",
+      "cnc machin",
+      "spindle",
+      "tool"
+    ]
+  },
+  {
+    "id": "fd7b7da794305cac",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: Swiss-style tooling expands machining capabilities",
+    "text": "IMTS 2026 Preview: Swiss-style tooling expands machining capabilities. Platinum Tooling Technologies will be showcasing a range of tooling solutions for Swiss-style CNC lathes at IMTS 2026 in booth #432201.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-swiss-style-tooling-expands-machining-capabilities",
+    "author": null,
+    "published_at": "2026-08-05T10:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551802+00:00",
+    "signal_type": "tooling_problem",
+    "priority": "high",
+    "relevance_score": 0.63,
+    "matched_keywords": [
+      "cnc",
+      "cnc lathe",
+      "lathe",
+      "tool"
+    ]
+  },
+  {
+    "id": "90b4834d9615781d",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Modular high-speed spindles support milling and finishing",
+    "text": "Modular high-speed spindles support milling and finishing. Modular high-speed spindles deliver up to 55,000 rpm, on-site cartridge replacement, and Bluetooth speed monitoring.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-high-speed-spindles-support-milling-and-finishing",
+    "author": null,
+    "published_at": "2026-07-31T10:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551842+00:00",
+    "signal_type": "surface_problem",
+    "priority": "high",
+    "relevance_score": 0.57,
+    "matched_keywords": [
+      "finish",
+      "milling",
+      "spindle"
+    ]
+  },
+  {
+    "id": "e46ade65a34b2172",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Mill-turn machining centre combines multiple processes",
+    "text": "Mill-turn machining centre combines multiple processes. HERMLE has introduced a 5-axis mill-turn machining centre that integrates milling, turning, and additional technologies in one setup.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/mill-turn-machining-centre-combines-multiple-processes",
+    "author": null,
+    "published_at": "2026-07-14T06:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.552171+00:00",
+    "signal_type": "how_to",
+    "priority": "medium",
+    "relevance_score": 0.57,
+    "matched_keywords": [
+      "5-axis",
+      "milling",
+      "setup"
+    ]
+  },
+  {
+    "id": "5dc6286cfc6eb86e",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Robotic deburring package integrates with existing CNC machinery",
+    "text": "Robotic deburring package integrates with existing CNC machinery. Productive Robotics’ OB7 deburring package has been designed to integrate with new or legacy CNC machinery.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/robotic-deburring-package-integrates-with-existing-cnc-machinery",
+    "author": null,
+    "published_at": "2026-08-12T12:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551704+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.52,
+    "matched_keywords": [
+      "cnc",
+      "cnc machin"
+    ]
+  },
+  {
+    "id": "634ff1dfa7f56d26",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: 5-axis machining centre combines milling and turning",
+    "text": "IMTS 2026 Preview: 5-axis machining centre combines milling and turning. Matsuura, together with partner Elliott Matsuura Canada, will be showcasing the MX-520T 5-axis multitasking machining centre at IMTS 2026 in booth #338630.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-machining-centre-combines-milling-and-turning",
+    "author": null,
+    "published_at": "2026-08-07T10:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551776+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.52,
+    "matched_keywords": [
+      "5-axis",
+      "milling"
+    ]
+  },
+  {
+    "id": "9cd2ede72b87da58",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Software helps manufacturers verify and optimize NC programs quickly",
+    "text": "Software helps manufacturers verify and optimize NC programs quickly. Hexagon latest version of NCSIMUL brings G-code verification, CNC simulation, and optimization together in one digital-twin environment.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/software-helps-manufacturers-verify-and-optimize-nc-programs-quickly",
+    "author": null,
+    "published_at": "2026-07-20T12:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.552063+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.52,
+    "matched_keywords": [
+      "cnc",
+      "g-code"
+    ]
+  },
+  {
+    "id": "a9b8561a0a435508",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: Waterjet cutting system offers improved abrasive hopper",
+    "text": "IMTS 2026 Preview: Waterjet cutting system offers improved abrasive hopper. OMAX will showcase its OMAX MAXIEM X Series JetMachining Center at IMTS 2026 in booth #135020.",
+    "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-waterjet-cutting-system-offers-improved-abrasive-hopper",
+    "author": null,
+    "published_at": "2026-08-21T10:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551518+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "machining center"
+    ]
+  },
+  {
+    "id": "ff690b0027f893ec",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: 5-axis horizontal machining centre is designed for large, heavy parts",
+    "text": "IMTS 2026 Preview: 5-axis horizontal machining centre is designed for large, heavy parts. Makino will display the a630iT, a production-focused, trunnion-based 5-axis horizontal machining centre at IMTS 2026 in booth #338519.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-horizontal-machining-centre-is-designed-for-large-heavy-parts",
+    "author": null,
+    "published_at": "2026-08-18T06:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551618+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "5-axis"
+    ]
+  },
+  {
+    "id": "293b0e872f3af4c1",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: Graphite milling machine ships as automation-ready",
+    "text": "IMTS 2026 Preview: Graphite milling machine ships as automation-ready. MC Machinery will display the Eagle V550 (graphite version) at IMTS 2026 in booth #338129.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-graphite-milling-machine-ships-as-automation-ready",
+    "author": null,
+    "published_at": "2026-08-17T08:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551629+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "milling"
+    ]
+  },
+  {
+    "id": "fa79c6d72f66d411",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "IMTS 2026 Preview: Heavy-duty 5-axis HMC built to be highly rigid",
+    "text": "IMTS 2026 Preview: Heavy-duty 5-axis HMC built to be highly rigid. Kitamura Machinery will be showcasing its Supercell-1000G heavy-duty, 5-axis horizontal machining centre at IMTS 2026 in booth 338520.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-heavy-duty-5-axis-hmc-built-to-be-highly-rigid",
+    "author": null,
+    "published_at": "2026-08-04T10:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551822+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "5-axis"
+    ]
+  },
+  {
+    "id": "7f4824ef62ca30ad",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "casting",
+    "title": "Solid CBN inserts improve high-speed cast iron machining",
+    "text": "Solid CBN inserts improve high-speed cast iron machining. ISCAR has introduced solid CBN inserts for high-speed machining of cast iron and powder metal components.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining",
+    "author": null,
+    "published_at": "2026-07-30T06:00:00-05:00",
+    "collected_at": "2026-08-22T03:15:39.551860+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "cast"
+    ]
+  }
+]
