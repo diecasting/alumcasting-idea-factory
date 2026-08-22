@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Example Atom Feed</title>
+  <link href="https://example.com/atom"/>
+  <updated>2023-08-18T12:00:00Z</updated>
+  <entry>
+    <title>Root cause of shrinkage defects in gravity die casting</title>
+    <link href="https://example.com/shrinkage" rel="alternate"/>
+    <id>https://example.com/shrinkage</id>
+    <summary>Why do I get shrinkage porosity in gravity die casting? Process temperature and gating question.</summary>
+    <updated>2023-08-18T12:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Company announces new manufacturing plant</title>
+    <link href="https://example.com/announce" rel="alternate"/>
+    <id>https://example.com/announce</id>
+    <summary>Press release: company announces expansion. Stock up on news.</summary>
+    <updated>2023-08-19T12:00:00Z</updated>
+  </entry>
+</feed>

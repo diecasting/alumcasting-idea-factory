@@ -1,0 +1,56 @@
+{
+  "data": {
+    "children": [
+      {
+        "data": {
+          "id": "abc001",
+          "title": "Why am I getting porosity in my aluminum die casting?",
+          "selftext": "I run a 350 ton high pressure die casting machine and keep seeing porosity in aluminum die cast parts near the gate. Any ideas on venting or gating?",
+          "permalink": "/r/manufacturing/comments/abc001/porosity/",
+          "author": "caster_joe",
+          "created_utc": 1692000000
+        }
+      },
+      {
+        "data": {
+          "id": "abc002",
+          "title": "Haas vs Mazak for 5-axis CNC machining center?",
+          "selftext": "Looking for a recommendation on which 5-axis CNC mill is best for aluminum machining. Differences in rigidity?",
+          "permalink": "/r/CNC/comments/abc002/haas_mazak/",
+          "author": "cnc_newb",
+          "created_utc": 1692100000
+        }
+      },
+      {
+        "data": {
+          "id": "abc003",
+          "title": "Powder coating orange peel / rough finish problem",
+          "selftext": "My electrostatic powder coating keeps coming out with orange peel and poor surface finish. Curing temperature issue?",
+          "permalink": "/r/finishing/comments/abc003/orange_peel/",
+          "author": "finisher",
+          "created_utc": 1692200000
+        }
+      },
+      {
+        "data": {
+          "id": "abc004",
+          "title": "Die casting market expected to grow to $40 billion by 2030",
+          "selftext": "A new market report says the global die casting market size will reach 40 billion with strong CAGR. Press release.",
+          "permalink": "/r/manufacturing/comments/abc004/market/",
+          "author": "newsbot",
+          "created_utc": 1692300000
+        }
+      },
+      {
+        "data": {
+          "id": "abc005",
+          "title": "How do I fix my laptop not turning on?",
+          "selftext": "My laptop won't boot, help!",
+          "permalink": "/r/AskEngineers/comments/abc005/laptop/",
+          "author": "random",
+          "created_utc": 1692400000
+        }
+      }
+    ]
+  }
+}

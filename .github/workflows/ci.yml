@@ -35,3 +35,7 @@ jobs:
       - name: Run pipeline smoke test
         run: |
           python -m app.pipeline
+
+      - name: Run radar dry-run (fixtures, no network)
+        run: |
+          python -m app.radar.pipeline --dry-run
