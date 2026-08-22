@@ -1,0 +1,64 @@
+# Keyword taxonomy v1 — English manufacturing content radar.
+# Phase 0 baseline. Extend freely; automated expansion is a later phase.
+
+die_casting:
+  - die casting
+  - die-casting
+  - high pressure die casting
+  - HPDC
+  - aluminum die casting
+  - aluminium die casting
+  - zinc die casting
+  - magnesium die casting
+
+casting:
+  - casting
+  - aluminum casting
+  - aluminium casting
+  - sand casting
+  - investment casting
+  - permanent mold casting
+  - casting defects
+
+cnc:
+  - CNC machining
+  - CNC milling
+  - CNC turning
+  - 5 axis CNC
+  - CNC tolerance
+  - machining tolerance
+  - CNC surface finish
+
+powder_coating:
+  - powder coating
+  - powder coating defects
+  - coating adhesion
+  - powder coating thickness
+  - powder coating failure
+
+manufacturing_problems:
+  - porosity
+  - cracking
+  - warping
+  - leakage
+  - dimensional tolerance
+  - surface defects
+  - shrinkage
+  - flash
+  - cold shut
+  - inclusions
+  - corrosion
+  - adhesion
+  - machining marks
+
+commercial_intent:
+  - supplier
+  - manufacturer
+  - OEM
+  - RFQ
+  - quotation
+  - sourcing
+  - manufacturing cost
+  - production cost
+  - lead time
+  - MOQ

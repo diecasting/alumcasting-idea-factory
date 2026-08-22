@@ -1,0 +1,6 @@
+# Phase 0: repository foundation only.
+# External API SDKs (Reddit, News, OpenAI) are intentionally NOT included yet.
+# All credentials are supplied via GitLab CI/CD variables in later phases.
+
+pytest>=7.0
+pyyaml>=6.0

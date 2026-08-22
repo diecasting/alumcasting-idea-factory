@@ -1,0 +1,17 @@
+stages:
+  - test
+
+run-pipeline-smoke:
+  stage: test
+  image: python:3.11
+  before_script:
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - pytest -v
+    - python -m app.pipeline
+  artifacts:
+    paths:
+      - reports/
+    when: always
+    expire_in: 7 days

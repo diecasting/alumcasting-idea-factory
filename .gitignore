@@ -1,0 +1,30 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets — NEVER commit credentials. Use GitLab CI/CD variables instead.
+.env
+.env.*
+*.secret
+
+# Test / build caches
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Generated reports (the folder is tracked via .gitkeep)
+reports/*.json
+reports/*.csv
+reports/*.html
+
+# IDE
+.idea/
+.vscode/
+*.swp
