@@ -47,3 +47,41 @@ def test_off_topic_question_is_dropped():
 def test_promotional_content_is_dropped():
     n = classify(_norm("Sign up for our webinar on casting innovations", "Contact us to subscribe."))
     assert not is_relevant(n)
+
+
+def test_laptop_turning_on_not_classified_as_cnc():
+    # Regression for the ambiguous-word false positive: "turning on" (a laptop
+    # power issue) must NOT match CNC "turning"/"lathe".
+    n = classify(_norm("How do I fix my laptop not turning on?", "it just won't power on"))
+    assert n.topic != "cnc_machining"
+    assert n.topic is None
+    assert not is_relevant(n)
+    assert "turning" not in n.matched_keywords
+    assert "lathe" not in n.matched_keywords
+
+
+def test_matched_keywords_are_literal_not_regex_patterns():
+    # CNC lathe signal -> literal "lathe" must appear, never a regex pattern.
+    n_cnc = classify(_norm("CNC lathe chatter at high spindle speed"))
+    assert "lathe" in n_cnc.matched_keywords
+    # Casting signal -> literal cast-related term must appear.
+    n_cast = classify(_norm("Porosity in aluminum die cast part"))
+    assert any("cast" in kw for kw in n_cast.matched_keywords)
+    # No recorded keyword may be a raw regex pattern string.
+    for kw in n_cnc.matched_keywords + n_cast.matched_keywords:
+        assert "\\" not in kw, f"matched_keyword leaked a regex metachar: {kw!r}"
+
+
+def test_lathe_signal_still_classified_as_cnc():
+    # Legitimate CNC lathe content must still be classified as cnc_machining.
+    n = classify(_norm("Best CNC lathe for small batch titanium machining?"))
+    assert n.topic == "cnc_machining"
+    assert is_relevant(n)
+    assert "lathe" in n.matched_keywords
+
+
+def test_cast_word_boundary_still_classified():
+    # A genuine "cast" phrase must still be picked up as a casting topic.
+    n = classify(_norm("Shrinkage defect in sand cast housing"))
+    assert n.topic in ("casting", "die_casting")
+    assert is_relevant(n)
