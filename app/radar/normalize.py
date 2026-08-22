@@ -46,6 +46,7 @@ def normalize_signal(raw: RawSignal) -> NormalizedSignal:
         author=raw.author,
         published_at=raw.published_at,
         collected_at=raw.collected_at or datetime.now(timezone.utc),
+        engagement=raw.engagement,
     )
 
 

@@ -72,6 +72,16 @@ class RedditSource(SourceAdapter):
                     published = datetime.fromtimestamp(float(created), tz=timezone.utc)
                 except Exception:
                     published = None
+            # Engagement (upvotes + comments) feeds the deterministic heat score.
+            try:
+                score = int(d.get("score") or 0)
+            except Exception:
+                score = 0
+            try:
+                comments = int(d.get("num_comments") or 0)
+            except Exception:
+                comments = 0
+            engagement = max(0, score + comments)
             out.append(
                 RawSignal(
                     source=self.name,
@@ -83,6 +93,7 @@ class RedditSource(SourceAdapter):
                     author=author,
                     published_at=published,
                     collected_at=self._now(),
+                    engagement=engagement,
                     raw=d,
                 )
             )

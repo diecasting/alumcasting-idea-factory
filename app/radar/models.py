@@ -67,6 +67,7 @@ class RawSignal:
     author: Optional[str] = None
     published_at: Optional[datetime] = None
     collected_at: Optional[datetime] = None
+    engagement: int = 0
     raw: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
@@ -80,6 +81,7 @@ class RawSignal:
             "author": self.author,
             "published_at": _iso(self.published_at),
             "collected_at": _iso(self.collected_at),
+            "engagement": self.engagement,
         }
 
 
@@ -101,6 +103,14 @@ class NormalizedSignal:
     priority: Priority = Priority.LOW
     relevance_score: float = 0.0
     matched_keywords: list = field(default_factory=list)
+    # Phase 1.2: Problem Signal Quality & Opportunity Ranking fields.
+    engagement: int = 0
+    heat_score: float = 0.0
+    problem_score: float = 0.0
+    opportunity_score: float = 0.0
+    is_problem_signal: bool = False
+    opportunity_rank: Optional[int] = None
+    score_reasons: list = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -118,6 +128,13 @@ class NormalizedSignal:
             "priority": self.priority.value,
             "relevance_score": round(self.relevance_score, 3),
             "matched_keywords": self.matched_keywords,
+            "engagement": self.engagement,
+            "heat_score": round(self.heat_score, 2),
+            "problem_score": round(self.problem_score, 2),
+            "opportunity_score": round(self.opportunity_score, 2),
+            "is_problem_signal": self.is_problem_signal,
+            "opportunity_rank": self.opportunity_rank,
+            "score_reasons": self.score_reasons,
         }
 
 
@@ -130,6 +147,7 @@ class RadarReport:
     total_normalized: int = 0
     total_relevant: int = 0
     total_deduped: int = 0
+    total_problem: int = 0
     by_topic: dict = field(default_factory=dict)
     signals: list = field(default_factory=list)
 
@@ -140,6 +158,7 @@ class RadarReport:
             "total_normalized": self.total_normalized,
             "total_relevant": self.total_relevant,
             "total_deduped": self.total_deduped,
+            "total_problem": self.total_problem,
             "by_topic": self.by_topic,
             "signals": [s.to_dict() for s in self.signals],
         }

@@ -33,10 +33,12 @@ def build_report(signals: list[NormalizedSignal], generated_at=None) -> RadarRep
     for s in signals:
         topic = s.topic or "uncategorized"
         by_topic[topic] = by_topic.get(topic, 0) + 1
+    total_problem = sum(1 for s in signals if s.is_problem_signal)
     return RadarReport(
         generated_at=generated_at,
         total_relevant=len(signals),
         total_deduped=len(signals),
+        total_problem=total_problem,
         by_topic=by_topic,
         signals=signals,
     )
@@ -54,7 +56,22 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
     with open(path, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(
-            ["priority", "topic", "signal_type", "score", "title", "url", "source", "published_at"]
+            [
+                "priority",
+                "topic",
+                "signal_type",
+                "relevance_score",
+                "problem_score",
+                "heat_score",
+                "opportunity_score",
+                "is_problem_signal",
+                "opportunity_rank",
+                "score_reasons",
+                "title",
+                "url",
+                "source",
+                "published_at",
+            ]
         )
         for s in signals:
             w.writerow(
@@ -63,6 +80,12 @@ def write_csv(path, signals: list[NormalizedSignal]) -> None:
                     s.topic or "",
                     s.signal_type.value,
                     round(s.relevance_score, 3),
+                    round(s.problem_score, 2),
+                    round(s.heat_score, 2),
+                    round(s.opportunity_score, 2),
+                    s.is_problem_signal,
+                    s.opportunity_rank if s.opportunity_rank is not None else "",
+                    "; ".join(s.score_reasons),
                     s.title,
                     s.url,
                     s.source,
@@ -84,6 +107,47 @@ def write_markdown(path, report: RadarReport) -> None:
     lines.append(f"- After deduplication: {report.total_deduped}")
     lines.append("")
 
+    # Phase 1.2: Problem Signal Quality summary.
+    relevant = report.total_relevant or 0
+    problem_rate = (report.total_problem / relevant * 100.0) if relevant else 0.0
+    lines.append("## Problem Signals")
+    lines.append("")
+    lines.append(f"- Raw signals: {report.total_raw}")
+    lines.append(f"- Relevant signals: {report.total_relevant}")
+    lines.append(f"- Problem signals: {report.total_problem}")
+    lines.append(f"- Problem signal rate: {problem_rate:.1f}%")
+    lines.append("")
+
+    # Phase 1.2: Top Content Opportunities (problem signals only, ranked).
+    problems = [s for s in report.signals if s.is_problem_signal]
+    problems.sort(key=lambda s: (s.opportunity_rank or 0))
+    top = problems[:10]
+    lines.append("## Top Content Opportunities")
+    lines.append("")
+    if not top:
+        lines.append("_No problem signals met the opportunity threshold in this window._")
+        lines.append("")
+    for s in top:
+        rank = s.opportunity_rank or 0
+        label = (s.topic or "uncategorized").replace("_", " ").title()
+        lines.append(f"### #{rank} — {s.title}")
+        lines.append(f"- Topic: {label}")
+        lines.append(f"- Signal Type: {s.signal_type.value.replace('_', ' ').title()}")
+        lines.append(f"- Problem Score: {round(s.problem_score, 2)}")
+        lines.append(f"- Heat Score: {round(s.heat_score, 2)}")
+        lines.append(f"- Relevance Score: {round(s.relevance_score * 100)}")
+        lines.append(f"- Opportunity Score: {round(s.opportunity_score, 2)}")
+        if s.score_reasons:
+            lines.append("- Score Reasons:")
+            for r in s.score_reasons:
+                lines.append(f"  - {r}")
+        lines.append(f"- Source: {s.source}")
+        if s.published_at:
+            lines.append(f"- Published: {_iso(s.published_at)}")
+        if s.url:
+            lines.append(f"- URL: {s.url}")
+        lines.append("")
+
     order = [t for t in TOPIC_ORDER if t in report.by_topic]
     order += [t for t in report.by_topic if t not in order]
 
@@ -101,6 +165,9 @@ def write_markdown(path, report: RadarReport) -> None:
             lines.append(f"### [{s.priority.value.upper()}] {s.title}")
             lines.append(f"- Type: {s.signal_type.value}")
             lines.append(f"- Relevance score: {round(s.relevance_score, 3)}")
+            if s.is_problem_signal:
+                lines.append(f"- Problem score: {round(s.problem_score, 2)}")
+                lines.append(f"- Opportunity rank: {s.opportunity_rank}")
             lines.append(f"- Source: {s.source}")
             if s.url:
                 lines.append(f"- URL: {s.url}")

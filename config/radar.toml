@@ -1,0 +1,148 @@
+# Manufacturing Content Opportunity Radar — scoring configuration (Phase 1.2).
+#
+# ALL scoring is deterministic and explainable. No AI, no LLM, no embeddings,
+# no paid API, no database. Every number lives here, not in Python source.
+
+[scoring]
+# A signal whose problem_score >= problem_threshold is a "problem signal"
+# and becomes eligible for opportunity ranking.
+problem_threshold = 60
+
+# Weighted sub-scores that make up problem_score (0-100). The six weights must
+# sum to 100.
+question_weight = 20
+troubleshooting_weight = 20
+defect_weight = 20
+technical_specificity_weight = 15
+engagement_weight = 15
+freshness_weight = 10
+
+# Engagement -> heat_score normalization (0-100 saturating curve).
+# heat = 100 * (1 - 1/(1 + engagement/engagement_scale))
+engagement_scale = 50
+
+# Freshness: signals published within fresh_days get the full freshness_weight.
+# Freshness then decays linearly to 0 over fresh_decay_days beyond that window.
+# Signals without a publication date are treated as fresh (full weight).
+fresh_days = 7
+fresh_decay_days = 30
+
+# Technical specificity: points awarded per distinct technical term, capped at
+# technical_specificity_weight. One specific technical term already signals
+# real manufacturing context; two or more => full weight.
+technical_points_per_term = 12
+
+[opportunity]
+# opportunity_score (0-100) = weighted blend of the three sub-scores below.
+# problem_weight + heat_weight + relevance_weight must sum to 100.
+# relevance_score (0-1 internally) is scaled to 0-100 for this blend.
+problem_weight = 50
+heat_weight = 25
+relevance_weight = 25
+
+# Problem indicators. Single-quoted regex strings (TOML literal strings, so the
+# backslashes are read literally by Python's `re`). These are NOT the relevance
+# keywords in relevance.py -- they measure *problem intent* for scoring only.
+[problem_indicators.question]
+patterns = [
+  '\?',
+  '\bwhy\b',
+  '\bhow\b',
+  '\bwhat\b',
+  '\bcan.?t\b',
+  '\bwon.?t\b',
+  '\bhow (do|can|to|should)\b',
+  '\bwhat (causes|is causing)\b',
+  '\bdo (i|es)\b',
+  '\bshould i\b',
+]
+
+[problem_indicators.troubleshooting]
+patterns = [
+  '\bproblem\b',
+  '\bissue\b',
+  '\btroubleshoot',
+  '\bnot working\b',
+  '\bdoesn.?t\b',
+  '\bdoes not\b',
+  '\berror\b',
+  '\bstuck\b',
+  '\bfix\b',
+  '\bfixing\b',
+  '\bsolve\b',
+  '\bsolution\b',
+  '\bsolutions\b',
+  '\bcause\b',
+  '\bcauses\b',
+  '\bhelp\b',
+  '\badvice\b',
+]
+
+[problem_indicators.defect]
+patterns = [
+  '\bporosit',
+  '\bvoid',
+  '\bshrinkage',
+  '\bdefect',
+  '\bdefective\b',
+  '\bwarping?\b',
+  '\bflash\b',
+  '\bcold shut',
+  '\binclusion',
+  '\bblister',
+  '\bmisrun',
+  '\bcrack',
+  '\bcracking\b',
+  '\bfail',
+  '\bfailure\b',
+  '\bbroke\b',
+  '\bburn',
+  '\bmelt',
+  '\brupture',
+  '\bchatter',
+  '\bpeeling\b',
+  '\bpeel\b',
+  '\bbubbles?\b',
+  '\borange peel',
+  '\badhesion\b',
+  '\bdimensional\b',
+  '\btoleran',
+  '\bsurface finish',
+  '\bpoor finish',
+  '\broughness\b',
+]
+
+[problem_indicators.technical]
+patterns = [
+  '\balumin(i)?um\b',
+  '\balloy\b',
+  '\bsteel\b',
+  '\btitanium\b',
+  '\bmagnesium\b',
+  '\bzinc\b',
+  '\bcopper\b',
+  '\btemper\b',
+  '\bdie[\s-]?cast',
+  '\bcasting\b',
+  '\binjection\b',
+  '\bmachin',
+  '\bmilling\b',
+  '\blathe\b',
+  '\bcnc\b',
+  '\bcoating\b',
+  '\bcuring\b',
+  '\bg-?code\b',
+  '\bspindle\b',
+  '\bfeed rate\b',
+  '\b5-?axis\b',
+  '\btolerance\b',
+  '\bejector\b',
+  '\bgating\b',
+  '\bsprue\b',
+  '\brunner\b',
+  '\bvent\b',
+  '\bcooling\b',
+  '\bhpdc\b',
+  '\bnd[td]\b',
+  '\bx-?ray\b',
+]

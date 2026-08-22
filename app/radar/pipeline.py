@@ -35,6 +35,7 @@ from app.radar.report import (
     write_json,
     write_markdown,
 )
+from app.radar.scoring import load_config, rank_opportunities, score_signal
 from app.radar.sources.reddit import RedditSource
 from app.radar.sources.rss import RSSSource
 
@@ -122,6 +123,13 @@ def run_pipeline(
 
     relevant = [n for n in normalized if is_relevant(n)]
     deduped = dedupe(relevant)
+
+    # Phase 1.2: Problem Signal Quality & Opportunity Ranking.
+    cfg = load_config()
+    for n in deduped:
+        score_signal(n, cfg)
+    rank_opportunities(deduped)
+
     deduped.sort(key=lambda s: (PRIORITY_RANK.get(s.priority, 9), -s.relevance_score))
 
     report = build_report(deduped, generated_at=generated_at)
@@ -152,6 +160,7 @@ def main(argv=None) -> int:
     print(f"  normalized    : {report.total_normalized}")
     print(f"  relevant      : {report.total_relevant}")
     print(f"  deduped       : {report.total_deduped}")
+    print(f"  problem signals: {report.total_problem}")
     print(f"  by topic      : {report.by_topic}")
     return 0
 
