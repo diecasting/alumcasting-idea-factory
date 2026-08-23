@@ -32,6 +32,8 @@ Key safety principles (from the Phase 1.5D spec):
 from __future__ import annotations
 
 import re
+import ssl
+import time
 import unicodedata
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
@@ -155,12 +157,39 @@ def build_url_normalizer(cfg: Optional[dict] = None) -> URLNormalizer:
 # Site inventory adapter (sitemap)                                             #
 # --------------------------------------------------------------------------- #
 
-def default_sitemap_transport(url: str, timeout: float = 15.0) -> tuple[int, str]:
-    """Stdlib GET transport for sitemap fetch. Returns (status, body).
+def _build_ssl_context(ca_bundle_path: Optional[str] = None) -> ssl.SSLContext:
+    """Build a TLS context with certificate verification ENABLED.
 
-    Non-blocking by design: HTTP errors return their status code (so callers can
-    decide to skip), and any transport-level failure (timeout, DNS, TLS) returns
-    (TRANSPORT_FAILURE, ""). No third-party HTTP library is used.
+    Certificate verification is ALWAYS on (``CERT_REQUIRED`` + hostname check).
+    This function never disables validation and never falls back to insecure
+    HTTP. CA bundle resolution order:
+      1. ``ca_bundle_path`` if provided (explicit override),
+      2. certifi's bundled CA bundle if importable (covers environments whose
+         system store is missing/empty, e.g. some managed Python builds),
+      3. the system default store (``cafile=None``).
+    """
+    try:
+        import certifi
+
+        cafile = ca_bundle_path or certifi.where()
+    except Exception:
+        cafile = ca_bundle_path  # may be None -> system default store
+    ctx = ssl.create_default_context(cafile=cafile)
+    ctx.check_hostname = True
+    ctx.verify_mode = ssl.CERT_REQUIRED
+    return ctx
+
+
+def default_sitemap_transport(
+    url: str, timeout: float = 15.0, ca_bundle_path: Optional[str] = None
+) -> tuple[int, str]:
+    """Stdlib HTTPS GET transport for sitemap fetch. Returns (status, body).
+
+    Non-blocking by design. TLS certificate verification is ENABLED (via certifi
+    or the system CA bundle). HTTP errors return their status code (so callers
+    can decide to skip), and any transport-level failure (timeout, DNS, TLS)
+    returns (TRANSPORT_FAILURE, ""). No third-party HTTP library, no disabled
+    verification, no insecure plaintext fallback.
     """
     import urllib.error
     import urllib.request
@@ -169,7 +198,8 @@ def default_sitemap_transport(url: str, timeout: float = 15.0) -> tuple[int, str
         url, headers={"User-Agent": "alumcasting-idea-factory/1.0 (sitemap)"}
     )
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        ctx = _build_ssl_context(ca_bundle_path)
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             charset = resp.headers.get_content_charset() or "utf-8"
             return resp.getcode(), resp.read().decode(charset, errors="replace")
     except urllib.error.HTTPError as exc:
@@ -198,11 +228,17 @@ class SiteInventoryAdapter:
         transport: Optional[SiteMapTransport] = None,
         timeout: float = 15.0,
         max_depth: int = 3,
+        max_retries: int = 1,
+        retry_backoff: float = 0.5,
     ) -> None:
         self.sitemap_url = sitemap_url
         self.transport = transport or default_sitemap_transport
         self.timeout = timeout
         self.max_depth = max_depth
+        # Bounded retry for TRANSIENT transport failures only. ``max_retries`` is
+        # the number of *additional* attempts beyond the first (1 == 2 total).
+        self.max_retries = max(0, int(max_retries))
+        self.retry_backoff = max(0.0, float(retry_backoff))
 
     def collect(self) -> tuple[list[str], str]:
         """Return ``(inventory_urls, inventory_status)``.
@@ -222,13 +258,28 @@ class SiteInventoryAdapter:
         return out, ("available" if parsed else "unavailable")
 
     def _fetch(self, url: str):
-        try:
-            status, body = self.transport(url, self.timeout)
-        except Exception:
+        """Fetch one URL with bounded retry on TRANSIENT transport failures.
+
+        4xx/5xx are definitive responses and are NEVER retried. Only
+        ``TRANSPORT_FAILURE`` (timeout, DNS, TLS, connection reset) is retried,
+        up to ``max_retries`` additional attempts with a fixed ``retry_backoff``.
+        Any outcome still resolves to ``None`` (caller -> inventory unavailable)
+        rather than raising.
+        """
+        last: Optional[tuple[int, str]] = None
+        for attempt in range(self.max_retries + 1):
+            try:
+                status, body = self.transport(url, self.timeout)
+            except Exception:
+                status, body = TRANSPORT_FAILURE, ""
+            if status != TRANSPORT_FAILURE or attempt >= self.max_retries:
+                last = (status, body)
+                break
+            if self.retry_backoff > 0:
+                time.sleep(self.retry_backoff)
+        if last is None or last[0] != 200 or not last[1]:
             return None
-        if status != 200 or not body:
-            return None
-        return body
+        return last[1]
 
     @staticmethod
     def _parse(body: str) -> tuple[list[str], list[str], bool]:
@@ -277,12 +328,22 @@ class SiteInventoryAdapter:
 def build_site_coverage_adapter(
     cfg: Optional[dict], transport: Optional[SiteMapTransport] = None
 ) -> SiteInventoryAdapter:
-    """Build a SiteInventoryAdapter from the ``[site_coverage]`` config."""
+    """Build a SiteInventoryAdapter from the ``[site_coverage]`` config.
+
+    If no ``transport`` is injected, the live ``default_sitemap_transport`` is
+    used with the configured CA bundle (certifi / system default) so TLS
+    verification works in environments whose system CA store is incomplete.
+    """
     sc = (cfg or {}).get("site_coverage", {}) if isinstance(cfg, dict) else {}
+    ca = sc.get("ca_bundle_path", "") or None
+    if transport is None:
+        transport = lambda u, t: default_sitemap_transport(u, t, ca_bundle_path=ca)
     return SiteInventoryAdapter(
         sitemap_url=sc.get("sitemap_url", "https://alumcasting.com/sitemap.xml"),
         transport=transport,
         timeout=float(sc.get("timeout", 15.0)),
+        max_retries=int(sc.get("sitemap_max_retries", 1)),
+        retry_backoff=float(sc.get("sitemap_retry_backoff", 0.5)),
     )
 
 
@@ -350,6 +411,72 @@ def match_candidate_to_page(
         page_tokens, candidate_defect_terms or set()
     )
     return tier, overlap, problem
+
+
+def _page_slug_text(url: str, normalizer: URLNormalizer) -> str:
+    """Derive human-readable match text from a sitemap page URL (URL-level only).
+
+    Uses ONLY the URL path slug (last non-empty path segment, with ``-``/``_``
+    replaced by spaces). This is deliberately URL-level evidence -- it does NOT
+    read the page body/title -- so it can only assert topical alignment at the
+    slug level. We never infer problem coverage from a slug alone.
+    """
+    try:
+        nurl = normalizer.normalize(url)
+        path = urlsplit(nurl).path
+    except Exception:
+        return ""
+    segs = [s for s in path.split("/") if s]
+    if not segs:
+        return ""
+    return segs[-1].replace("-", " ").replace("_", " ").strip()
+
+
+def _match_candidates_to_inventory(
+    norm_candidates: list,
+    inventory_urls: list,
+    normalizer: URLNormalizer,
+    token_threshold: float,
+    candidate_defect_terms: set,
+) -> list:
+    """Deterministically match candidate queries against sitemap page URLs.
+
+    Pure, offline, deterministic. For each normalized candidate, compare it to
+    the URL-level slug text of every inventory page using ``match_candidate_to_page``
+    (exact normalized match OR Jaccard token overlap >= threshold). No fuzzy,
+    substring, embedding, or LLM matching. Each distinct matching page becomes a
+    ``MatchedPage`` with ``source="sitemap"`` and ``topical_match`` /
+    ``problem_match`` left ``"unknown"`` -- a URL match is only page-existence
+    evidence and never asserts that the page answers the problem.
+    """
+    matched: list = []
+    seen_urls: set = set()
+    for _orig, nc in norm_candidates:
+        if not nc:
+            continue
+        for page_url in inventory_urls:
+            if not page_url or page_url in seen_urls:
+                continue
+            slug = _page_slug_text(page_url, normalizer)
+            if not slug:
+                continue
+            tier, overlap, _problem = match_candidate_to_page(
+                nc, slug, token_threshold, candidate_defect_terms
+            )
+            if tier is None:
+                continue
+            seen_urls.add(page_url)
+            matched.append(
+                MatchedPage(
+                    url=page_url,
+                    match_tier=tier,
+                    topical_match="unknown",
+                    problem_match="unknown",
+                    source="sitemap",
+                    overlap_ratio=overlap,
+                )
+            )
+    return matched
 
 
 # --------------------------------------------------------------------------- #
@@ -492,6 +619,7 @@ def build_site_coverage(
     sc_cfg = cfg.get("site_coverage", {}) if isinstance(cfg, dict) else {}
     token_threshold = float(sc_cfg.get("token_overlap_threshold", 0.60))
     position_weak = float(sc_cfg.get("position_weak_threshold", 20.0))
+    normalizer = build_url_normalizer(cfg)
 
     # Candidate problem vocabulary (reused deterministic extraction).
     candidates = extract_candidate_queries(brief)
@@ -574,11 +702,47 @@ def build_site_coverage(
 
     # --- 2) Sitemap inventory only (no GSC page evidence) ------------------
     # Safe model (Phase 1.5D spec section 3): sitemap gives URL existence but
-    # NOT page title/headings/body/problem coverage. Without content access we
-    # deliberately do NOT infer topic/problem match from URL slugs, so the
-    # signal-level coverage cannot be confirmed -> "unknown".
+    # NOT page title/headings/body/problem coverage. We still ACTIVATE the
+    # deterministic candidate->page matching so a real URL-level match is
+    # recorded in ``matched_pages``. However, a URL/slug match is ONLY
+    # page-existence / topical-alignment evidence -- we do NOT infer that the
+    # page answers the specific problem. So ``site_coverage`` stays ``unknown``
+    # and problem coverage stays ``unknown`` (page existence != problem
+    # coverage). When a deterministic match exists we surface it with
+    # ``coverage_confidence = LOW`` (weak URL-level evidence) rather than
+    # fabricating coverage.
     inventory_available = inventory_status == "available"
     if inventory_available:
+        matched_pages = _match_candidates_to_inventory(
+            norm_candidates, inventory_urls, normalizer,
+            token_threshold, candidate_defect_terms,
+        )
+        if matched_pages:
+            pce = ProblemCoverageEvidence(
+                page_existence="true",
+                topical_match="unknown",
+                problem_match="unknown",
+                performance="",
+            )
+            best = max(matched_pages, key=lambda m: m.overlap_ratio)
+            notes.append(
+                "A sitemap URL deterministically matches the candidate query at "
+                "the URL/slug level (best tier=%s, overlap=%.2f). This is "
+                "page-existence / topical-alignment evidence ONLY; it does NOT "
+                "prove the page answers the specific problem. Topical/problem "
+                "coverage remains unknown (page existence != problem coverage)."
+                % (best.match_tier, best.overlap_ratio)
+            )
+            return SiteCoverageEvidence(
+                site_coverage=CoverageStatus.UNKNOWN,
+                content_gap_status=ContentGapStatus.UNKNOWN,
+                coverage_confidence=CoverageConfidence.LOW,
+                coverage_sources=["sitemap"],
+                matched_pages=matched_pages,
+                problem_coverage_evidence=pce,
+                notes=notes,
+            )
+        # No deterministic sitemap match found.
         pce = ProblemCoverageEvidence(
             page_existence="unknown",
             topical_match="unknown",
@@ -586,9 +750,10 @@ def build_site_coverage(
             performance="",
         )
         notes.append(
-            "Sitemap inventory available, but page title/headings/body are not "
-            "inspected in this implementation; topic/problem match cannot be "
-            "determined (page existence does NOT imply problem coverage)."
+            "Sitemap inventory available, but no URL in the sitemap "
+            "deterministically matches the candidate query. Page title/headings/"
+            "body are not inspected; topic/problem match cannot be determined "
+            "(page existence does NOT imply problem coverage)."
         )
         return SiteCoverageEvidence(
             site_coverage=CoverageStatus.UNKNOWN,

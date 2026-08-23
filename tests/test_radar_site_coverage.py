@@ -15,15 +15,21 @@ These tests also encode the Phase 1.5D non-negotiable safety principles:
 
 from __future__ import annotations
 
+import ssl
+
 from app.radar.models import NormalizedSignal
+from app.radar.pipeline import load_config
 from app.radar.search_evidence import GSCSearchEvidence, SearchEvidence
 from app.radar.site_coverage import (
     TRANSPORT_FAILURE,
     URLNormalizer,
     SiteInventoryAdapter,
+    _build_ssl_context,
+    _page_slug_text,
     build_site_coverage_adapter,
     build_url_normalizer,
     compute_overlap,
+    default_sitemap_transport,
     has_problem_term,
     match_candidate_to_page,
     build_site_coverage,
@@ -594,3 +600,248 @@ def test_default_sitemap_transport_is_callable():
     # Sanity: the live transport exists and is importable (never called offline).
     from app.radar.site_coverage import default_sitemap_transport
     assert callable(default_sitemap_transport)
+
+
+# --------------------------------------------------------------------------- #
+# A. HTTPS transport reliability (certifi / verified TLS, no network in tests) #
+# --------------------------------------------------------------------------- #
+
+
+def test_build_ssl_context_has_verification_enabled():
+    ctx = _build_ssl_context()
+    # Verification must be ON: CERT_REQUIRED + hostname check. We never disable.
+    assert ctx.verify_mode == ssl.CERT_REQUIRED
+    assert ctx.check_hostname is True
+
+
+def test_build_ssl_context_uses_certifi_or_system_and_never_disables():
+    # Empty path -> certifi or system default, still verifying.
+    ctx = _build_ssl_context(ca_bundle_path="")
+    assert ctx.verify_mode == ssl.CERT_REQUIRED
+    assert ctx.check_hostname is True
+    # A non-existent explicit bundle must RAISE at build time, not silently
+    # disable verification (no verify=False / unverified context).
+    import pytest
+
+    with pytest.raises((FileNotFoundError, ssl.SSLError, OSError)):
+        _build_ssl_context(ca_bundle_path="/no/such/ca-bundle.pem")
+
+
+def test_default_sitemap_transport_preserves_contract():
+    # (url, timeout) and (url, timeout, ca_bundle_path) both callable; never
+    # invoked over the network in tests.
+    assert callable(default_sitemap_transport)
+
+
+# --------------------------------------------------------------------------- #
+# D. Sitemap fetch resilience (bounded retry)                                  #
+# --------------------------------------------------------------------------- #
+
+
+def test_sitemap_adapter_retries_on_transport_failure_then_succeeds():
+    calls = {"n": 0}
+
+    def flaky(url, timeout=15.0):
+        calls["n"] += 1
+        if calls["n"] <= 2:
+            return TRANSPORT_FAILURE, ""
+        return 200, SINGLE_SITEMAP
+
+    a = SiteInventoryAdapter("https://x/s.xml", transport=flaky,
+                             max_retries=2, retry_backoff=0.0)
+    urls, status = a.collect()
+    assert status == "available"
+    assert len(urls) == 3
+    assert calls["n"] == 3  # 2 failures + 1 success
+
+
+def test_sitemap_adapter_retry_exhaustion_unavailable():
+    calls = {"n": 0}
+
+    def always_fail(url, timeout=15.0):
+        calls["n"] += 1
+        return TRANSPORT_FAILURE, ""
+
+    a = SiteInventoryAdapter("https://x/s.xml", transport=always_fail,
+                             max_retries=2, retry_backoff=0.0)
+    urls, status = a.collect()
+    assert status == "unavailable"
+    assert urls == []
+    assert calls["n"] == 3  # 1 initial + 2 retries
+
+
+def test_sitemap_adapter_does_not_retry_404():
+    calls = {"n": 0}
+
+    def not_found(url, timeout=15.0):
+        calls["n"] += 1
+        return 404, ""
+
+    a = SiteInventoryAdapter("https://x/s.xml", transport=not_found,
+                             max_retries=2, retry_backoff=0.0)
+    urls, status = a.collect()
+    assert status == "unavailable"
+    assert urls == []
+    assert calls["n"] == 1  # 4xx is definitive; no retry
+
+
+def test_build_site_coverage_adapter_reads_timeout_and_retry():
+    cfg = {"site_coverage": {"timeout": 30.0, "sitemap_max_retries": 2,
+                             "sitemap_retry_backoff": 0.5}}
+    a = build_site_coverage_adapter(cfg, transport=transport_returning(200, SINGLE_SITEMAP))
+    assert a.timeout == 30.0
+    assert a.max_retries == 2
+    assert a.retry_backoff == 0.5
+
+
+def test_injected_fake_transport_not_wrapped():
+    # When a transport is injected, it is used verbatim (no CA wrapping), so
+    # offline tests keep working and the production CA path is not forced.
+    calls = []
+
+    def fake(url, timeout=15.0):
+        calls.append(url)
+        return 200, SINGLE_SITEMAP
+
+    a = build_site_coverage_adapter({"site_coverage": {}}, transport=fake)
+    urls, status = a.collect()
+    assert status == "available"
+    assert len(urls) == 3
+    assert calls == ["https://alumcasting.com/sitemap.xml"]
+
+
+# --------------------------------------------------------------------------- #
+# B. Activated sitemap -> candidate matching (conservative)                    #
+# --------------------------------------------------------------------------- #
+
+
+def test_sitemap_candidate_match_populates_matched_pages():
+    inv = ["https://alumcasting.com/aluminum-die-casting-porosity-control"]
+    sig = make_signal(brief=make_brief(
+        core="aluminum die casting porosity control",
+        title="Aluminum Die Casting Porosity Control",
+    ))
+    ev = build_site_coverage(sig, inventory_urls=inv, inventory_status="available",
+                             gsc_evidence_rows=[], cfg=None)
+    # URL-level match recorded, but coverage stays UNKNOWN (page existence !=
+    # problem coverage) and confidence is only LOW.
+    assert ev.site_coverage == CoverageStatus.UNKNOWN
+    assert ev.coverage_confidence == CoverageConfidence.LOW
+    assert len(ev.matched_pages) == 1
+    mp = ev.matched_pages[0]
+    assert mp.url == inv[0]
+    assert mp.source == "sitemap"
+    assert mp.match_tier in ("exact", "token_overlap")
+    assert mp.topical_match == "unknown"
+    assert mp.problem_match == "unknown"
+    assert ev.problem_coverage_evidence.page_existence == "true"
+
+
+def test_sitemap_no_match_keeps_unknown():
+    inv = ["https://alumcasting.com/contact"]
+    sig = make_signal()  # default brief about porosity
+    ev = build_site_coverage(sig, inventory_urls=inv, inventory_status="available",
+                             gsc_evidence_rows=[], cfg=None)
+    assert ev.site_coverage == CoverageStatus.UNKNOWN
+    assert ev.matched_pages == []
+    assert ev.coverage_confidence == CoverageConfidence.UNKNOWN
+    # We never assert "false" content for an unmatched sitemap; unknown only.
+    assert ev.problem_coverage_evidence.page_existence == "unknown"
+
+
+def test_sitemap_match_does_not_claim_problem_coverage():
+    inv = ["https://alumcasting.com/aluminum-die-casting-porosity-control"]
+    sig = make_signal(brief=make_brief(
+        core="aluminum die casting porosity control", title="X"))
+    ev = build_site_coverage(sig, inventory_urls=inv, inventory_status="available",
+                             gsc_evidence_rows=[], cfg=None)
+    # A URL match alone must NOT become covered/strong/existing/partial.
+    assert ev.site_coverage != CoverageStatus.STRONG
+    assert ev.site_coverage != CoverageStatus.EXISTING
+    assert ev.site_coverage != CoverageStatus.PARTIAL
+    assert ev.content_gap_status != ContentGapStatus.COVERED
+    assert ev.matched_pages[0].problem_match == "unknown"
+    assert ev.matched_pages[0].topical_match == "unknown"
+    assert ev.problem_coverage_evidence.problem_match == "unknown"
+
+
+def test_exact_deterministic_match_via_slug():
+    inv = ["https://alumcasting.com/die-casting-porosity"]
+    sig = make_signal(brief=make_brief(core="die casting porosity",
+                                       title="Die Casting Porosity"))
+    ev = build_site_coverage(sig, inventory_urls=inv, inventory_status="available",
+                             gsc_evidence_rows=[], cfg=None)
+    assert len(ev.matched_pages) == 1
+    assert ev.matched_pages[0].match_tier == "exact"
+
+
+def test_no_fuzzy_substring_matching():
+    n = URLNormalizer()
+    # "porosity" (single token) must NOT match a slug "porositycontrol" (no space).
+    assert match_candidate_to_page(
+        "porosity", _page_slug_text("https://x/porositycontrol", n), 0.60, set()
+    )[0] is None
+    # "porosity" vs "porosity control page": Jaccard 1/3 < 0.6 -> no match.
+    assert match_candidate_to_page("porosity", "porosity control page", 0.60, set())[0] is None
+    # Sanity: equal normalized strings match exactly.
+    assert match_candidate_to_page("porosity control", "porosity control", 0.60, set())[0] == "exact"
+
+
+def test_page_existence_not_problem_coverage():
+    inv = ["https://alumcasting.com/aluminum-die-casting-porosity-control"]
+    sig = make_signal(brief=make_brief(
+        core="aluminum die casting porosity control", title="X"))
+    ev = build_site_coverage(sig, inventory_urls=inv, inventory_status="available",
+                             gsc_evidence_rows=[], cfg=None)
+    assert ev.problem_coverage_evidence.topical_match == "unknown"
+    assert ev.problem_coverage_evidence.problem_match == "unknown"
+    assert ev.problem_coverage_evidence.page_existence == "true"
+
+
+def test_attach_preserves_scores_and_brief_with_match():
+    inv = ["https://alumcasting.com/aluminum-die-casting-porosity-control"]
+    sig = make_signal(brief=make_brief(
+        core="aluminum die casting porosity control", title="X"))
+    ps = sig.problem_score
+    os_ = sig.opportunity_score
+    cb = sig.content_brief
+    attach_site_coverage_to_signals([sig], inventory_urls=inv,
+                                    inventory_status="available", cfg=None)
+    # The only allowed mutation is site_coverage; scores/brief untouched.
+    assert sig.problem_score == ps
+    assert sig.opportunity_score == os_
+    assert sig.content_brief is cb
+    assert isinstance(sig.site_coverage, SiteCoverageEvidence)
+    assert sig.site_coverage.matched_pages  # matching is now active
+
+
+# --------------------------------------------------------------------------- #
+# GSC disabled / no credentials / determinism                                  #
+# --------------------------------------------------------------------------- #
+
+
+def test_gsc_remains_disabled_in_config():
+    cfg = load_config()
+    assert cfg["gsc"]["enabled"] is False
+
+
+def test_no_credentials_in_site_coverage_config():
+    cfg = load_config()
+    sc = cfg.get("site_coverage", {})
+    for forbidden in ("client_secret", "token", "oauth", "api_key",
+                      "private_key", "password", "secret"):
+        assert forbidden not in sc, f"forbidden key {forbidden} in [site_coverage]"
+    gsc = cfg.get("gsc", {})
+    for forbidden in ("client_secret", "token", "oauth", "refresh_token",
+                      "private_key"):
+        assert forbidden not in gsc, f"forbidden key {forbidden} in [gsc]"
+
+
+def test_matching_is_deterministic():
+    inv = ["https://alumcasting.com/aluminum-die-casting-porosity-control"]
+    kw = dict(inventory_urls=inv, inventory_status="available",
+              gsc_evidence_rows=[], cfg=None)
+    b = make_brief(core="aluminum die casting porosity control", title="X")
+    ev1 = build_site_coverage(make_signal(brief=b), **kw)
+    ev2 = build_site_coverage(make_signal(brief=b), **kw)
+    assert ev1.to_dict() == ev2.to_dict()

@@ -222,4 +222,17 @@ token_overlap_threshold = 0.60
 # ONLY affects the performance dimension (referenced vs. create-new) and is kept
 # strictly separate from the coverage decision.
 position_weak_threshold = 20.0
+# Per-fetch timeout (seconds) for each sitemap document. Finite and never
+# unbounded. The post sub-sitemap on this site can be slow to serve, so allow
+# more than the original 15s. Retries (below) apply on transient failures.
+timeout = 150.0
+# Resilience: bounded retries for TRANSIENT transport failures only (timeout,
+# DNS, TLS, connection reset). 4xx/5xx are definitive and never retried.
+# ``sitemap_max_retries`` is the number of ADDITIONAL attempts (1 == 2 total).
+sitemap_max_retries = 1
+sitemap_retry_backoff = 0.5
+# Optional CA bundle path for TLS verification. Empty -> use certifi's bundled
+# CA bundle if available, else the system default store. Certificate
+# verification is ALWAYS enabled (never disabled, never insecure).
+ca_bundle_path = ""
 
