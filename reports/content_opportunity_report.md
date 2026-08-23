@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-08-22T06:43:55.358881+00:00
+Generated: 2026-08-23T06:45:37.715971+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -21,6 +21,18 @@ _No problem signals met the opportunity threshold in this window._
 ## Content Opportunity Briefs
 
 _No problem signals met the opportunity threshold in this window._
+
+## Search Demand Evidence
+
+_First-party Google Search Console (GSC) evidence for the verified property. GSC impressions reflect performance for this property only — they are NOT third-party search volume and must not be read as total market demand. A query absent from GSC only means no matching first-party evidence was retrieved for the property / window._
+
+_No problem signals carried GSC search evidence in this run._
+
+## Site Coverage & Content Gap
+
+_Deterministic site-coverage and content-gap check for problem signals. Coverage is judged from first-party GSC page evidence (when available) and the site sitemap inventory. "unknown" means the evidence required to decide coverage was not available in this run — it is NOT a statement that no content exists or that the topic is uncovered._
+
+_No problem signals carried site-coverage evidence in this run._
 
 ## Casting (1)
 
