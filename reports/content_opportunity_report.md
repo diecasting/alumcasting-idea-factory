@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-08-25T06:52:47.208295+00:00
+Generated: 2026-08-26T06:54:22.015924+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 12
-- After deduplication: 12
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 12
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining
 - Matched: cast
 
-## Cnc Machining (11)
+## Cnc Machining (12)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
@@ -66,12 +66,19 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-high-speed-spindles-support-milling-and-finishing
 - Matched: finish, milling, spindle
 
-### [MEDIUM] Mill-turn machining centre combines multiple processes
-- Type: how_to
-- Relevance score: 0.57
+### [HIGH] IMTS 2026 Preview: Machine automatically indexes, changes milling inserts
+- Type: tooling_problem
+- Relevance score: 0.51
 - Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/mill-turn-machining-centre-combines-multiple-processes
-- Matched: 5-axis, milling, setup
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts
+- Matched: milling, tool
+
+### [MEDIUM] FANUC launches 5-axis technology initiative
+- Type: other
+- Relevance score: 0.58
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/fanuc-launches-5-axis-technology-initiative/
+- Matched: 5-axis, cnc, cnc machin
 
 ### [MEDIUM] Robotic deburring package integrates with existing CNC machinery
 - Type: other
