@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-08-26T06:54:22.015924+00:00
+Generated: 2026-08-27T17:27:27.248768+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 13
-- After deduplication: 13
+- Relevant (after filtering): 15
+- After deduplication: 15
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 13
+- Relevant signals: 15
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,14 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Casting (1)
+## Casting (2)
+
+### [HIGH] This is how you do AM for defense
+- Type: question
+- Relevance score: 0.51
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/this-is-how-you-do-am-for-defense/
+- Matched: casting, how
 
 ### [MEDIUM] Solid CBN inserts improve high-speed cast iron machining
 - Type: other
@@ -43,7 +50,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining
 - Matched: cast
 
-## Cnc Machining (12)
+## Cnc Machining (13)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
@@ -59,6 +66,13 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-swiss-style-tooling-expands-machining-capabilities
 - Matched: cnc, cnc lathe, lathe, tool
 
+### [HIGH] IMTS 2026 Preview: Portal milling machine cuts lightweight material
+- Type: material_problem
+- Relevance score: 0.57
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-portal-milling-machine-cuts-lightweight-material
+- Matched: 5-axis, material, milling
+
 ### [HIGH] Modular high-speed spindles support milling and finishing
 - Type: surface_problem
 - Relevance score: 0.57
@@ -72,13 +86,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts
 - Matched: milling, tool
-
-### [MEDIUM] FANUC launches 5-axis technology initiative
-- Type: other
-- Relevance score: 0.58
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/fanuc-launches-5-axis-technology-initiative/
-- Matched: 5-axis, cnc, cnc machin
 
 ### [MEDIUM] Robotic deburring package integrates with existing CNC machinery
 - Type: other
@@ -100,6 +107,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/software-helps-manufacturers-verify-and-optimize-nc-programs-quickly
 - Matched: cnc, g-code
+
+### [MEDIUM] Talon Precision acquires aerospace manufacturer Baron Machine
+- Type: other
+- Relevance score: 0.46
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/talon-precision-acquires-aerospace-manufacturer-baron-machine/
+- Matched: cnc
 
 ### [MEDIUM] IMTS 2026 Preview: Waterjet cutting system offers improved abrasive hopper
 - Type: other
