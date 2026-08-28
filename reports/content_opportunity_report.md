@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-08-27T17:27:27.248768+00:00
+Generated: 2026-08-28T18:20:52.354574+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 15
-- After deduplication: 15
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 15
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,14 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Casting (2)
-
-### [HIGH] This is how you do AM for defense
-- Type: question
-- Relevance score: 0.51
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/this-is-how-you-do-am-for-defense/
-- Matched: casting, how
+## Casting (1)
 
 ### [MEDIUM] Solid CBN inserts improve high-speed cast iron machining
 - Type: other
@@ -50,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining
 - Matched: cast
 
-## Cnc Machining (13)
+## Cnc Machining (12)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
@@ -107,13 +100,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/software-helps-manufacturers-verify-and-optimize-nc-programs-quickly
 - Matched: cnc, g-code
-
-### [MEDIUM] Talon Precision acquires aerospace manufacturer Baron Machine
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/talon-precision-acquires-aerospace-manufacturer-baron-machine/
-- Matched: cnc
 
 ### [MEDIUM] IMTS 2026 Preview: Waterjet cutting system offers improved abrasive hopper
 - Type: other
