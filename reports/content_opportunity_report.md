@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-01T11:20:22.756342+00:00
+Generated: 2026-09-02T10:54:42.001729+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 12
-- After deduplication: 12
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 12
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining
 - Matched: cast
 
-## Cnc Machining (11)
+## Cnc Machining (12)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
@@ -72,6 +72,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-high-speed-spindles-support-milling-and-finishing
 - Matched: finish, milling, spindle
+
+### [HIGH] Group kicks off a revolution in CNCs
+- Type: process_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs
+- Matched: cnc, process
 
 ### [HIGH] IMTS 2026 Preview: Machine automatically indexes, changes milling inserts
 - Type: tooling_problem
