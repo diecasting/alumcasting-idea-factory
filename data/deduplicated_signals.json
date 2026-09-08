@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-jet-spindles-enable-high-speed-machining-with-small-tools",
     "author": null,
     "published_at": "2026-08-06T06:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350064+00:00",
+    "collected_at": "2026-09-08T10:52:54.987822+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.63,
@@ -21,14 +21,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 16.65,
-    "opportunity_score": 24.07,
+    "problem_score": 16.33,
+    "opportunity_score": 23.91,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 32d ago (aging)"
+      "published 33d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -44,7 +44,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-swiss-style-tooling-expands-machining-capabilities",
     "author": null,
     "published_at": "2026-08-05T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350073+00:00",
+    "collected_at": "2026-09-08T10:52:54.987840+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.63,
@@ -56,15 +56,15 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 36.38,
-    "opportunity_score": 33.94,
+    "problem_score": 36.06,
+    "opportunity_score": 33.78,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "troubleshooting language detected",
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 33d ago (aging)"
+      "published 34d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -80,7 +80,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349319+00:00",
+    "collected_at": "2026-09-08T10:52:54.986564+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -98,7 +98,7 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 3d ago (fresh)"
+      "published 4d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -114,7 +114,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-portal-milling-machine-cuts-lightweight-material",
     "author": null,
     "published_at": "2026-08-26T12:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349572+00:00",
+    "collected_at": "2026-09-08T10:52:54.986990+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -125,14 +125,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.4,
-    "opportunity_score": 25.95,
+    "problem_score": 23.08,
+    "opportunity_score": 25.79,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin, milling)",
       "no engagement signal",
-      "published 12d ago (aging)"
+      "published 13d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -148,7 +148,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-high-speed-spindles-support-milling-and-finishing",
     "author": null,
     "published_at": "2026-07-31T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350134+00:00",
+    "collected_at": "2026-09-08T10:52:54.987936+00:00",
     "signal_type": "surface_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -166,7 +166,7 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 38d ago (stale)"
+      "published 39d ago (stale)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -182,7 +182,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs",
     "author": null,
     "published_at": "2026-09-01T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349438+00:00",
+    "collected_at": "2026-09-08T10:52:54.986769+00:00",
     "signal_type": "process_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -198,7 +198,7 @@
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 6d ago (fresh)"
+      "published 7d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -214,7 +214,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts",
     "author": null,
     "published_at": "2026-08-25T08:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349630+00:00",
+    "collected_at": "2026-09-08T10:52:54.987092+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -224,14 +224,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.01,
-    "opportunity_score": 24.25,
+    "problem_score": 22.7,
+    "opportunity_score": 24.1,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 13d ago (aging)"
+      "published 14d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -247,7 +247,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/robotic-deburring-package-integrates-with-existing-cnc-machinery",
     "author": null,
     "published_at": "2026-08-12T12:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349918+00:00",
+    "collected_at": "2026-09-08T10:52:54.987599+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.52,
@@ -257,14 +257,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 18.74,
-    "opportunity_score": 22.37,
+    "problem_score": 18.42,
+    "opportunity_score": 22.21,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 26d ago (aging)"
+      "published 27d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -280,7 +280,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-machining-centre-combines-milling-and-turning",
     "author": null,
     "published_at": "2026-08-07T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350035+00:00",
+    "collected_at": "2026-09-08T10:52:54.987776+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.52,
@@ -290,14 +290,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 17.04,
-    "opportunity_score": 21.52,
+    "problem_score": 16.72,
+    "opportunity_score": 21.36,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin, milling)",
       "no engagement signal",
-      "published 31d ago (aging)"
+      "published 32d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -313,7 +313,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
     "author": null,
     "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349330+00:00",
+    "collected_at": "2026-09-08T10:52:54.986580+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -329,7 +329,7 @@
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 3d ago (fresh)"
+      "published 4d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -345,7 +345,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-waterjet-cutting-system-offers-improved-abrasive-hopper",
     "author": null,
     "published_at": "2026-08-21T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349680+00:00",
+    "collected_at": "2026-09-08T10:52:54.987182+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -354,13 +354,13 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 6.71,
-    "opportunity_score": 14.86,
+    "problem_score": 6.39,
+    "opportunity_score": 14.7,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 17d ago (aging)"
+      "published 18d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -376,7 +376,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-horizontal-machining-centre-is-designed-for-large-heavy-parts",
     "author": null,
     "published_at": "2026-08-18T06:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349800+00:00",
+    "collected_at": "2026-09-08T10:52:54.987382+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -385,14 +385,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 20.65,
-    "opportunity_score": 21.82,
+    "problem_score": 20.33,
+    "opportunity_score": 21.66,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 20d ago (aging)"
+      "published 21d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -408,7 +408,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-graphite-milling-machine-ships-as-automation-ready",
     "author": null,
     "published_at": "2026-08-17T08:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.349820+00:00",
+    "collected_at": "2026-09-08T10:52:54.987410+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -417,14 +417,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 20.35,
-    "opportunity_score": 21.68,
+    "problem_score": 20.03,
+    "opportunity_score": 21.52,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 21d ago (aging)"
+      "published 22d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -440,7 +440,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-heavy-duty-5-axis-hmc-built-to-be-highly-rigid",
     "author": null,
     "published_at": "2026-08-04T10:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350103+00:00",
+    "collected_at": "2026-09-08T10:52:54.987889+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -449,14 +449,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 16.04,
-    "opportunity_score": 19.52,
+    "problem_score": 15.72,
+    "opportunity_score": 19.36,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 34d ago (aging)"
+      "published 35d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -472,7 +472,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining",
     "author": null,
     "published_at": "2026-07-30T06:00:00-05:00",
-    "collected_at": "2026-09-07T11:57:09.350161+00:00",
+    "collected_at": "2026-09-08T10:52:54.987980+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -488,7 +488,7 @@
     "score_reasons": [
       "technical specificity detected (machin)",
       "no engagement signal",
-      "published 39d ago (stale)"
+      "published 40d ago (stale)"
     ],
     "content_brief": null,
     "search_evidence": null,
