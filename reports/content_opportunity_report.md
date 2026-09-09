@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-08T10:52:54.138580+00:00
+Generated: 2026-09-09T10:57:35.625514+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
