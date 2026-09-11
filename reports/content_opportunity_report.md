@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-10T10:54:29.426878+00:00
+Generated: 2026-09-11T10:52:25.823919+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -34,16 +34,14 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Casting (1)
+## Cnc Machining (15)
 
-### [MEDIUM] Solid CBN inserts improve high-speed cast iron machining
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-cbn-inserts-improve-high-speed-cast-iron-machining
-- Matched: cast
-
-## Cnc Machining (14)
+### [HIGH] ToolDance unveils X1 desktop CNC mill at IFA 2026
+- Type: tooling_problem
+- Relevance score: 0.63
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/tooldance-unveils-x1-desktop-cnc-mill-at-ifa-2026/
+- Matched: cnc, cnc mill, spindle, tool
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
