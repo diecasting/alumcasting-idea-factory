@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-13T11:20:12.095561+00:00
+Generated: 2026-09-14T12:12:43.838341+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 15
-- After deduplication: 15
+- Relevant (after filtering): 14
+- After deduplication: 14
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 15
+- Relevant signals: 14
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (15)
+## Cnc Machining (14)
 
 ### [HIGH] ToolDance unveils X1 desktop CNC mill at IFA 2026
 - Type: tooling_problem
@@ -70,13 +70,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-portal-milling-machine-cuts-lightweight-material
 - Matched: 5-axis, material, milling
-
-### [HIGH] Modular high-speed spindles support milling and finishing
-- Type: surface_problem
-- Relevance score: 0.57
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-high-speed-spindles-support-milling-and-finishing
-- Matched: finish, milling, spindle
 
 ### [HIGH] Group kicks off a revolution in CNCs
 - Type: process_problem
