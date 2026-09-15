@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-14T12:12:43.838341+00:00
+Generated: 2026-09-15T11:22:01.156506+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 14
-- After deduplication: 14
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 14
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,14 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (14)
-
-### [HIGH] ToolDance unveils X1 desktop CNC mill at IFA 2026
-- Type: tooling_problem
-- Relevance score: 0.63
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/tooldance-unveils-x1-desktop-cnc-mill-at-ifa-2026/
-- Matched: cnc, cnc mill, spindle, tool
+## Cnc Machining (13)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
