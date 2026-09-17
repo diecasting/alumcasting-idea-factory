@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-16T11:06:22.816635+00:00
+Generated: 2026-09-17T11:16:04.193342+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -34,7 +34,16 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (13)
+## Casting (1)
+
+### [HIGH] FARO CREAFORM adds casting inspection tools to CAM2
+- Type: material_problem
+- Relevance score: 0.51
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/faro-creaform-adds-casting-inspection-tools-to-cam2/
+- Matched: casting, material
+
+## Cnc Machining (12)
 
 ### [HIGH] Modular jet spindles enable high-speed machining with small tools
 - Type: tooling_problem
@@ -119,10 +128,3 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-graphite-milling-machine-ships-as-automation-ready
 - Matched: milling
-
-### [MEDIUM] IMTS 2026 Preview: Heavy-duty 5-axis HMC built to be highly rigid
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-heavy-duty-5-axis-hmc-built-to-be-highly-rigid
-- Matched: 5-axis
