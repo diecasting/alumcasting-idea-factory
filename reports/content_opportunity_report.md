@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-17T11:16:04.193342+00:00
+Generated: 2026-09-18T10:48:38.251782+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 13
-- After deduplication: 13
+- Relevant (after filtering): 12
+- After deduplication: 12
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 13
+- Relevant signals: 12
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -33,15 +33,6 @@ _No problem signals carried GSC search evidence in this run._
 _Deterministic site-coverage and content-gap check for problem signals. Coverage is judged from first-party GSC page evidence (when available) and the site sitemap inventory. "unknown" means the evidence required to decide coverage was not available in this run — it is NOT a statement that no content exists or that the topic is uncovered._
 
 _No problem signals carried site-coverage evidence in this run._
-
-## Casting (1)
-
-### [HIGH] FARO CREAFORM adds casting inspection tools to CAM2
-- Type: material_problem
-- Relevance score: 0.51
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/faro-creaform-adds-casting-inspection-tools-to-cam2/
-- Matched: casting, material
 
 ## Cnc Machining (12)
 
