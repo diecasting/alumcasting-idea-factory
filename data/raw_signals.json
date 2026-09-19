@@ -2,13 +2,61 @@
   {
     "source": "rss:https://www.engineering.com/feed/",
     "source_type": "rss",
+    "external_id": "https://www.engineering.com/?p=150951",
+    "title": "Investigating the Acoustic Performance of a Chamber Music Hall with Simulation",
+    "body": "Chamber music ensembles rely on excellent acoustics at the music halls where they are performing. Combining acoustics simulation and ray tracing enables engineers to improve the design of music halls and help deliver acoustics for a refined musical experience. The energy in the room is rousing — the musicians command center stage, with their instruments […] The post Investigating the Acoustic Performance of a Chamber Music Hall with Simulation appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/investigating-the-acoustic-performance-of-a-chamber-music-hall-with-simulation/",
+    "author": null,
+    "published_at": "2026-09-18T15:14:22+00:00",
+    "collected_at": "2026-09-19T10:32:36.841339+00:00",
+    "engagement": 0
+  },
+  {
+    "source": "rss:https://www.engineering.com/feed/",
+    "source_type": "rss",
+    "external_id": "https://www.engineering.com/?p=151214",
+    "title": "Bambu Lab opens 3D printing challenge for assistive designs",
+    "body": "Seven accessibility organizations will test designs for everyday tasks and distribute selected models through volunteer networks. The post Bambu Lab opens 3D printing challenge for assistive designs appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/bambu-lab-opens-3d-printing-challenge-for-assistive-designs/",
+    "author": null,
+    "published_at": "2026-09-18T13:55:06+00:00",
+    "collected_at": "2026-09-19T10:32:36.841377+00:00",
+    "engagement": 0
+  },
+  {
+    "source": "rss:https://www.engineering.com/feed/",
+    "source_type": "rss",
+    "external_id": "https://www.engineering.com/?p=151211",
+    "title": "NovoLINC launches MaxLINC thermal interface material",
+    "body": "MaxLINC targets heat flux above 100 W/cm² and accommodates up to 350 µm of device and package warpage. The post NovoLINC launches MaxLINC thermal interface material appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/novolinc-launches-maxlinc-thermal-interface-material/",
+    "author": null,
+    "published_at": "2026-09-18T11:21:58+00:00",
+    "collected_at": "2026-09-19T10:32:36.841403+00:00",
+    "engagement": 0
+  },
+  {
+    "source": "rss:https://www.engineering.com/feed/",
+    "source_type": "rss",
+    "external_id": "https://www.engineering.com/?p=151208",
+    "title": "Saturn Cloud integrates NVIDIA Run:ai for AI inference",
+    "body": "The platform lets GPU operators offer token-based inference, GPU hours and managed fine-tuning from existing infrastructure. The post Saturn Cloud integrates NVIDIA Run:ai for AI inference appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/saturn-cloud-integrates-nvidia-runai-for-ai-inference/",
+    "author": null,
+    "published_at": "2026-09-18T11:12:18+00:00",
+    "collected_at": "2026-09-19T10:32:36.841425+00:00",
+    "engagement": 0
+  },
+  {
+    "source": "rss:https://www.engineering.com/feed/",
+    "source_type": "rss",
     "external_id": "https://www.engineering.com/?p=151203",
     "title": "ASUS and Poesis test autonomous AI trading on local system",
     "body": "The week-long experiment used live capital for research, risk management and trade execution within predefined mandates. The post ASUS and Poesis test autonomous AI trading on local system appeared first on Engineering.com .",
     "url": "https://www.engineering.com/asus-and-poesis-test-autonomous-ai-trading-on-local-system/",
     "author": null,
     "published_at": "2026-09-18T10:20:49+00:00",
-    "collected_at": "2026-09-18T10:48:38.738161+00:00",
+    "collected_at": "2026-09-19T10:32:36.841447+00:00",
     "engagement": 0
   },
   {
@@ -20,7 +68,7 @@
     "url": "https://www.engineering.com/velo3d-joins-gidep-to-support-defense-manufacturing/",
     "author": null,
     "published_at": "2026-09-18T10:02:39+00:00",
-    "collected_at": "2026-09-18T10:48:38.738197+00:00",
+    "collected_at": "2026-09-19T10:32:36.841467+00:00",
     "engagement": 0
   },
   {
@@ -32,7 +80,7 @@
     "url": "https://www.engineering.com/lawrence-semiconductor-names-don-garrison-as-coo/",
     "author": null,
     "published_at": "2026-09-18T09:54:26+00:00",
-    "collected_at": "2026-09-18T10:48:38.738227+00:00",
+    "collected_at": "2026-09-19T10:32:36.841490+00:00",
     "engagement": 0
   },
   {
@@ -44,7 +92,7 @@
     "url": "https://www.engineering.com/the-tricky-engineering-of-orbital-data-centers/",
     "author": null,
     "published_at": "2026-09-17T16:21:05+00:00",
-    "collected_at": "2026-09-18T10:48:38.738253+00:00",
+    "collected_at": "2026-09-19T10:32:36.841529+00:00",
     "engagement": 0
   },
   {
@@ -56,7 +104,7 @@
     "url": "https://www.engineering.com/comsol-multiphysics-v2027-released-for-systems-modeling/",
     "author": null,
     "published_at": "2026-09-17T13:28:34+00:00",
-    "collected_at": "2026-09-18T10:48:38.738274+00:00",
+    "collected_at": "2026-09-19T10:32:36.841552+00:00",
     "engagement": 0
   },
   {
@@ -68,55 +116,19 @@
     "url": "https://www.engineering.com/vectorworks-2027-adds-tools-for-connected-design-workflows/",
     "author": null,
     "published_at": "2026-09-17T13:08:28+00:00",
-    "collected_at": "2026-09-18T10:48:38.738295+00:00",
+    "collected_at": "2026-09-19T10:32:36.841571+00:00",
     "engagement": 0
   },
   {
-    "source": "rss:https://www.engineering.com/feed/",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
     "source_type": "rss",
-    "external_id": "https://www.engineering.com/?p=151160",
-    "title": "FARO introduces scanners for geospatial and AECO workflows",
-    "body": "The Focus i.1 X combines a 400-meter scanning range with a mountable GNSS/RTK receiver for outdoor projects. The post FARO introduces scanners for geospatial and AECO workflows appeared first on Engineering.com .",
-    "url": "https://www.engineering.com/faro-introduces-scanners-for-geospatial-and-aeco-workflows/",
+    "external_id": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/welding/welding-heat-input-requirements",
+    "title": "Welding heat input requirements",
+    "body": "Often misunderstood, these calculations can be critical in your welding procedure.",
+    "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/welding/welding-heat-input-requirements",
     "author": null,
-    "published_at": "2026-09-17T12:59:45+00:00",
-    "collected_at": "2026-09-18T10:48:38.738315+00:00",
-    "engagement": 0
-  },
-  {
-    "source": "rss:https://www.engineering.com/feed/",
-    "source_type": "rss",
-    "external_id": "https://www.engineering.com/?p=151157",
-    "title": "Cadence and ADI develop next-generation SHARC audio processors",
-    "body": "The SHARC-FX core delivers 5X higher performance and supports AI workloads for software-defined vehicle audio systems. The post Cadence and ADI develop next-generation SHARC audio processors appeared first on Engineering.com .",
-    "url": "https://www.engineering.com/cadence-and-adi-develop-next-generation-sharc-audio-processors/",
-    "author": null,
-    "published_at": "2026-09-17T12:50:10+00:00",
-    "collected_at": "2026-09-18T10:48:38.738353+00:00",
-    "engagement": 0
-  },
-  {
-    "source": "rss:https://www.engineering.com/feed/",
-    "source_type": "rss",
-    "external_id": "https://www.engineering.com/?p=151153",
-    "title": "Siemens and Redington expand industrial software access in Africa",
-    "body": "The agreement covers Egypt, Kenya, Ethiopia, Nigeria, Morocco and Tanzania, with plans to extend distribution to additional regions. The post Siemens and Redington expand industrial software access in Africa appeared first on Engineering.com .",
-    "url": "https://www.engineering.com/siemens-and-redington-expand-industrial-software-access-in-africa/",
-    "author": null,
-    "published_at": "2026-09-17T11:17:56+00:00",
-    "collected_at": "2026-09-18T10:48:38.738376+00:00",
-    "engagement": 0
-  },
-  {
-    "source": "rss:https://www.engineering.com/feed/",
-    "source_type": "rss",
-    "external_id": "https://www.engineering.com/?p=151149",
-    "title": "ABB partners with Ferrari Hypersail on marine electrification",
-    "body": "The yacht's 48 V and 800 VDC architecture will manage renewable energy for navigation, foil controls, safety systems and propulsion. The post ABB partners with Ferrari Hypersail on marine electrification appeared first on Engineering.com .",
-    "url": "https://www.engineering.com/abb-partners-with-ferrari-hypersail-on-marine-electrification/",
-    "author": null,
-    "published_at": "2026-09-17T10:50:33+00:00",
-    "collected_at": "2026-09-18T10:48:38.738395+00:00",
+    "published_at": "2026-09-18T06:00:00-05:00",
+    "collected_at": "2026-09-19T10:32:37.349069+00:00",
     "engagement": 0
   },
   {
@@ -128,7 +140,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/understanding-hidden-shop-waste",
     "author": null,
     "published_at": "2026-09-17T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479160+00:00",
+    "collected_at": "2026-09-19T10:32:37.349098+00:00",
     "engagement": 0
   },
   {
@@ -140,7 +152,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/fabricating/cutting-through-the-uncertainties-at-arc-rite",
     "author": null,
     "published_at": "2026-09-16T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479187+00:00",
+    "collected_at": "2026-09-19T10:32:37.349114+00:00",
     "engagement": 0
   },
   {
@@ -152,7 +164,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/metalworking/quote-for-success",
     "author": null,
     "published_at": "2026-09-15T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479212+00:00",
+    "collected_at": "2026-09-19T10:32:37.349136+00:00",
     "engagement": 0
   },
   {
@@ -164,7 +176,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/fabricating/strategic-collaboration-the-way-forward",
     "author": null,
     "published_at": "2026-09-14T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479226+00:00",
+    "collected_at": "2026-09-19T10:32:37.349148+00:00",
     "engagement": 0
   },
   {
@@ -176,7 +188,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/metalfinishing/imts-2026-preview-grinding-and-deburring-products-designed-to-address-manufacturing-challenges",
     "author": null,
     "published_at": "2026-09-11T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479242+00:00",
+    "collected_at": "2026-09-19T10:32:37.349162+00:00",
     "engagement": 0
   },
   {
@@ -188,7 +200,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/management/canadas-aerospace-industry-charts-its-next-era-of-growth",
     "author": null,
     "published_at": "2026-09-11T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479259+00:00",
+    "collected_at": "2026-09-19T10:32:37.349177+00:00",
     "engagement": 0
   },
   {
@@ -200,7 +212,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/imts-2026-preview-cadcam-software-suite-for-machining-includes-numerous-enhancements",
     "author": null,
     "published_at": "2026-09-10T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479272+00:00",
+    "collected_at": "2026-09-19T10:32:37.349190+00:00",
     "engagement": 0
   },
   {
@@ -212,7 +224,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/metalfinishing/flange-facing-machine-designed-for-use-on-site-or-in-shop",
     "author": null,
     "published_at": "2026-09-10T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479293+00:00",
+    "collected_at": "2026-09-19T10:32:37.349210+00:00",
     "engagement": 0
   },
   {
@@ -224,7 +236,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/healthsafety/eyewash-stations-and-emergency-showers-improve-shop-safety",
     "author": null,
     "published_at": "2026-09-10T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479308+00:00",
+    "collected_at": "2026-09-19T10:32:37.349223+00:00",
     "engagement": 0
   },
   {
@@ -236,7 +248,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/cuttingtools/ceratizit-relocates-canadian-headquarters-to-mississauga-ont",
     "author": null,
     "published_at": "2026-09-09T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479324+00:00",
+    "collected_at": "2026-09-19T10:32:37.349236+00:00",
     "engagement": 0
   },
   {
@@ -248,7 +260,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/five-flute-end-mills-boost-high-production-aluminum-machining",
     "author": null,
     "published_at": "2026-09-09T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479337+00:00",
+    "collected_at": "2026-09-19T10:32:37.349248+00:00",
     "engagement": 0
   },
   {
@@ -260,7 +272,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/management/define-your-company-culture",
     "author": null,
     "published_at": "2026-09-09T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479348+00:00",
+    "collected_at": "2026-09-19T10:32:37.349258+00:00",
     "engagement": 0
   },
   {
@@ -272,7 +284,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/bth-sales-expands-with-new-facility-growing-product-portfolio",
     "author": null,
     "published_at": "2026-09-08T12:20:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479361+00:00",
+    "collected_at": "2026-09-19T10:32:37.349271+00:00",
     "engagement": 0
   },
   {
@@ -284,7 +296,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/spark-co-invests-45m-in-new-ontario-facility",
     "author": null,
     "published_at": "2026-09-08T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479374+00:00",
+    "collected_at": "2026-09-19T10:32:37.349283+00:00",
     "engagement": 0
   },
   {
@@ -296,7 +308,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/management/bdc-offers-guidance-to-canadian-businesses-on-new-american-tariffs",
     "author": null,
     "published_at": "2026-09-08T09:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479387+00:00",
+    "collected_at": "2026-09-19T10:32:37.349295+00:00",
     "engagement": 0
   },
   {
@@ -308,7 +320,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/measurement/imts-2026-preview-digital-comparator-uses-high-resolution-digital-monitor",
     "author": null,
     "published_at": "2026-09-08T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479400+00:00",
+    "collected_at": "2026-09-19T10:32:37.349307+00:00",
     "engagement": 0
   },
   {
@@ -320,7 +332,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-workholding-devices-to-be-displayed",
     "author": null,
     "published_at": "2026-09-07T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479413+00:00",
+    "collected_at": "2026-09-19T10:32:37.349319+00:00",
     "engagement": 0
   },
   {
@@ -332,7 +344,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/eriez-appoints-director-of-global-manufacturing",
     "author": null,
     "published_at": "2026-09-07T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479425+00:00",
+    "collected_at": "2026-09-19T10:32:37.349330+00:00",
     "engagement": 0
   },
   {
@@ -344,7 +356,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/management/hidden-problems-kill-productivity-in-machine-shops",
     "author": null,
     "published_at": "2026-09-07T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479439+00:00",
+    "collected_at": "2026-09-19T10:32:37.349343+00:00",
     "engagement": 0
   },
   {
@@ -356,7 +368,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/okuma-america-appoints-new-president-and-coo",
     "author": null,
     "published_at": "2026-09-06T11:23:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479453+00:00",
+    "collected_at": "2026-09-19T10:32:37.349355+00:00",
     "engagement": 0
   },
   {
@@ -368,7 +380,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/management/microcare-appoints-new-coo",
     "author": null,
     "published_at": "2026-09-04T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479465+00:00",
+    "collected_at": "2026-09-19T10:32:37.349367+00:00",
     "engagement": 0
   },
   {
@@ -380,7 +392,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479477+00:00",
+    "collected_at": "2026-09-19T10:32:37.349379+00:00",
     "engagement": 0
   },
   {
@@ -392,7 +404,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
     "author": null,
     "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479493+00:00",
+    "collected_at": "2026-09-19T10:32:37.349392+00:00",
     "engagement": 0
   },
   {
@@ -404,7 +416,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/fabricating/built-to-last-at-black-box-manufacturing",
     "author": null,
     "published_at": "2026-09-04T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479507+00:00",
+    "collected_at": "2026-09-19T10:32:37.349403+00:00",
     "engagement": 0
   },
   {
@@ -416,7 +428,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/cuttingtools/high-feed-end-mills-machine-stainless-steel-and-high-temp-alloys",
     "author": null,
     "published_at": "2026-09-03T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479541+00:00",
+    "collected_at": "2026-09-19T10:32:37.349418+00:00",
     "engagement": 0
   },
   {
@@ -428,7 +440,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/imts-2026-preview-robot-machine-tending-improves-productivity",
     "author": null,
     "published_at": "2026-09-03T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479555+00:00",
+    "collected_at": "2026-09-19T10:32:37.349430+00:00",
     "engagement": 0
   },
   {
@@ -440,7 +452,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/metalfinishing/imts-2026-preview-grinding-and-abrasive-products-to-be-showcased",
     "author": null,
     "published_at": "2026-09-03T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479568+00:00",
+    "collected_at": "2026-09-19T10:32:37.349441+00:00",
     "engagement": 0
   },
   {
@@ -452,7 +464,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/nikon-slm-solutions-partners-with-canadian-firm",
     "author": null,
     "published_at": "2026-09-03T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479580+00:00",
+    "collected_at": "2026-09-19T10:32:37.349452+00:00",
     "engagement": 0
   },
   {
@@ -464,7 +476,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/hypertherm-associates-awards-12-north-american-schools-with-grants",
     "author": null,
     "published_at": "2026-09-02T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479593+00:00",
+    "collected_at": "2026-09-19T10:32:37.349465+00:00",
     "engagement": 0
   },
   {
@@ -476,7 +488,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/imts-2026-preview-collaborative-robot-brings-portable-automation-to-welding-applications",
     "author": null,
     "published_at": "2026-09-02T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479605+00:00",
+    "collected_at": "2026-09-19T10:32:37.349476+00:00",
     "engagement": 0
   },
   {
@@ -488,7 +500,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-hydraulic-press-automation-systems-to-be-highlighted",
     "author": null,
     "published_at": "2026-09-02T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479619+00:00",
+    "collected_at": "2026-09-19T10:32:37.349487+00:00",
     "engagement": 0
   },
   {
@@ -500,7 +512,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/cuttingtools/the-real-roi-of-application-specific-tooling",
     "author": null,
     "published_at": "2026-09-02T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479634+00:00",
+    "collected_at": "2026-09-19T10:32:37.349499+00:00",
     "engagement": 0
   },
   {
@@ -512,7 +524,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/cuttingtools/ceratizit-names-new-customer-service-manager-for-canada-us",
     "author": null,
     "published_at": "2026-09-01T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479645+00:00",
+    "collected_at": "2026-09-19T10:32:37.349510+00:00",
     "engagement": 0
   },
   {
@@ -524,7 +536,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs",
     "author": null,
     "published_at": "2026-09-01T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479662+00:00",
+    "collected_at": "2026-09-19T10:32:37.349525+00:00",
     "engagement": 0
   },
   {
@@ -536,7 +548,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-waterjet-system-to-be-displayed-with-variety-of-tapping-arms",
     "author": null,
     "published_at": "2026-09-01T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479675+00:00",
+    "collected_at": "2026-09-19T10:32:37.349539+00:00",
     "engagement": 0
   },
   {
@@ -548,7 +560,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/measurement/imts-2026-preview-automated-digital-profile-projector-delivers-fast-results",
     "author": null,
     "published_at": "2026-09-01T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479688+00:00",
+    "collected_at": "2026-09-19T10:32:37.349550+00:00",
     "engagement": 0
   },
   {
@@ -560,7 +572,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/varsteel-expands-coast-to-coast-footprint-with-acquisition",
     "author": null,
     "published_at": "2026-08-31T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479702+00:00",
+    "collected_at": "2026-09-19T10:32:37.349563+00:00",
     "engagement": 0
   },
   {
@@ -572,7 +584,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/am-company-builds-world-cup-champions-a-3d-printed-replica-trophy",
     "author": null,
     "published_at": "2026-08-31T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479716+00:00",
+    "collected_at": "2026-09-19T10:32:37.349576+00:00",
     "engagement": 0
   },
   {
@@ -584,7 +596,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/fabricating/metal-folding-fundamentals",
     "author": null,
     "published_at": "2026-08-31T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479731+00:00",
+    "collected_at": "2026-09-19T10:32:37.349591+00:00",
     "engagement": 0
   },
   {
@@ -596,7 +608,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/leeco-steel-announces-changes-to-sales-staff",
     "author": null,
     "published_at": "2026-08-28T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479745+00:00",
+    "collected_at": "2026-09-19T10:32:37.349604+00:00",
     "engagement": 0
   },
   {
@@ -608,7 +620,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/management/metal-supermarkets-awards-20000-in-trade-school-scholarships",
     "author": null,
     "published_at": "2026-08-28T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479758+00:00",
+    "collected_at": "2026-09-19T10:32:37.349617+00:00",
     "engagement": 0
   },
   {
@@ -620,7 +632,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/management/visit-imts-with-financing-in-place",
     "author": null,
     "published_at": "2026-08-28T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479772+00:00",
+    "collected_at": "2026-09-19T10:32:37.349630+00:00",
     "engagement": 0
   },
   {
@@ -632,7 +644,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-laser-processing-machines-to-be-displayed",
     "author": null,
     "published_at": "2026-08-27T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479783+00:00",
+    "collected_at": "2026-09-19T10:32:37.349640+00:00",
     "engagement": 0
   },
   {
@@ -644,7 +656,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-small-footprint-vmc-ships-ready-for-automation",
     "author": null,
     "published_at": "2026-08-27T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479794+00:00",
+    "collected_at": "2026-09-19T10:32:37.349651+00:00",
     "engagement": 0
   },
   {
@@ -656,7 +668,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/healthsafety/reservoir-dryer-helps-control-moisture-in-hydraulic-and-lubrication-systems",
     "author": null,
     "published_at": "2026-08-27T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479806+00:00",
+    "collected_at": "2026-09-19T10:32:37.349662+00:00",
     "engagement": 0
   },
   {
@@ -668,7 +680,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/leeco-steel-names-vice-president-of-energy-and-international-sales",
     "author": null,
     "published_at": "2026-08-26T14:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479817+00:00",
+    "collected_at": "2026-09-19T10:32:37.349673+00:00",
     "engagement": 0
   },
   {
@@ -680,7 +692,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-portal-milling-machine-cuts-lightweight-material",
     "author": null,
     "published_at": "2026-08-26T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479828+00:00",
+    "collected_at": "2026-09-19T10:32:37.349684+00:00",
     "engagement": 0
   },
   {
@@ -692,7 +704,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/circular-saw-blade-targets-industrial-metal-cutting",
     "author": null,
     "published_at": "2026-08-26T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479841+00:00",
+    "collected_at": "2026-09-19T10:32:37.349697+00:00",
     "engagement": 0
   },
   {
@@ -704,7 +716,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-reliable-four-and-five-flute-engineered-for-core-shop-applications",
     "author": null,
     "published_at": "2026-08-26T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479853+00:00",
+    "collected_at": "2026-09-19T10:32:37.349708+00:00",
     "engagement": 0
   },
   {
@@ -716,7 +728,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/automationsoftware/dont-risk-falling-behind-in-ai-adoption",
     "author": null,
     "published_at": "2026-08-26T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479864+00:00",
+    "collected_at": "2026-09-19T10:32:37.349719+00:00",
     "engagement": 0
   },
   {
@@ -728,7 +740,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/event/measurement/renishaw-canada-technology-days-2026",
     "author": null,
     "published_at": "2026-08-25T11:05:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479876+00:00",
+    "collected_at": "2026-09-19T10:32:37.349731+00:00",
     "engagement": 0
   },
   {
@@ -740,7 +752,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/healthsafety/dust-collectors-target-airborne-particles-from-metal-finishing",
     "author": null,
     "published_at": "2026-08-25T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479888+00:00",
+    "collected_at": "2026-09-19T10:32:37.349743+00:00",
     "engagement": 0
   },
   {
@@ -752,7 +764,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts",
     "author": null,
     "published_at": "2026-08-25T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479902+00:00",
+    "collected_at": "2026-09-19T10:32:37.349756+00:00",
     "engagement": 0
   },
   {
@@ -764,7 +776,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/metalfinishing/wide-belt-sanders-deliver-consistent-material-removal-and-finishing",
     "author": null,
     "published_at": "2026-08-25T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479916+00:00",
+    "collected_at": "2026-09-19T10:32:37.349771+00:00",
     "engagement": 0
   },
   {
@@ -776,7 +788,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/imts-2026-preview-scalable-machine-tending-robotics-shown-in-live-demonstration",
     "author": null,
     "published_at": "2026-08-24T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479933+00:00",
+    "collected_at": "2026-09-19T10:32:37.349783+00:00",
     "engagement": 0
   },
   {
@@ -788,7 +800,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/automationsoftware/ai-powered-system-recommends-tube-bending-parameters-before-production",
     "author": null,
     "published_at": "2026-08-24T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479945+00:00",
+    "collected_at": "2026-09-19T10:32:37.349795+00:00",
     "engagement": 0
   },
   {
@@ -800,7 +812,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/management/strong-processes-build-strong-quality-systems",
     "author": null,
     "published_at": "2026-08-24T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479962+00:00",
+    "collected_at": "2026-09-19T10:32:37.349806+00:00",
     "engagement": 0
   },
   {
@@ -812,7 +824,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-waterjet-cutting-system-offers-improved-abrasive-hopper",
     "author": null,
     "published_at": "2026-08-21T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479974+00:00",
+    "collected_at": "2026-09-19T10:32:37.349817+00:00",
     "engagement": 0
   },
   {
@@ -824,7 +836,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/coated-carbide-grade-improves-small-part-stainless-steel-turning",
     "author": null,
     "published_at": "2026-08-21T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479987+00:00",
+    "collected_at": "2026-09-19T10:32:37.349831+00:00",
     "engagement": 0
   },
   {
@@ -836,7 +848,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/fabricating/getting-more-from-every-punch",
     "author": null,
     "published_at": "2026-08-21T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.479999+00:00",
+    "collected_at": "2026-09-19T10:32:37.349843+00:00",
     "engagement": 0
   },
   {
@@ -848,7 +860,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/automationsoftware/imts-2026-preview-automated-welding-system-paired-with-linear-track",
     "author": null,
     "published_at": "2026-08-20T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480014+00:00",
+    "collected_at": "2026-09-19T10:32:37.349861+00:00",
     "engagement": 0
   },
   {
@@ -860,7 +872,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/laser-system-integrates-stability-for-high-speed-sheet-cutting",
     "author": null,
     "published_at": "2026-08-20T08:35:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480025+00:00",
+    "collected_at": "2026-09-19T10:32:37.349871+00:00",
     "engagement": 0
   },
   {
@@ -872,7 +884,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/entry-level-cylindrical-grinders-expand-grinding-machine-options",
     "author": null,
     "published_at": "2026-08-20T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480037+00:00",
+    "collected_at": "2026-09-19T10:32:37.349883+00:00",
     "engagement": 0
   },
   {
@@ -884,7 +896,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/management/seaspan-strengthens-cybersecurity-in-canadian-shipbuilding",
     "author": null,
     "published_at": "2026-08-20T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480049+00:00",
+    "collected_at": "2026-09-19T10:32:37.349894+00:00",
     "engagement": 0
   },
   {
@@ -896,7 +908,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-fine-boring-tools-paired-with-external-digital-reader",
     "author": null,
     "published_at": "2026-08-19T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480060+00:00",
+    "collected_at": "2026-09-19T10:32:37.349906+00:00",
     "engagement": 0
   },
   {
@@ -908,7 +920,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/automationsoftware/epicor-appoints-ceo",
     "author": null,
     "published_at": "2026-08-19T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480072+00:00",
+    "collected_at": "2026-09-19T10:32:37.349917+00:00",
     "engagement": 0
   },
   {
@@ -920,7 +932,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/imts-announces-2026-conference-lineup",
     "author": null,
     "published_at": "2026-08-19T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480082+00:00",
+    "collected_at": "2026-09-19T10:32:37.349927+00:00",
     "engagement": 0
   },
   {
@@ -932,7 +944,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/management/davie-launches-ontario-based-company-for-autonomous-maritime-vehicles",
     "author": null,
     "published_at": "2026-08-18T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480095+00:00",
+    "collected_at": "2026-09-19T10:32:37.349951+00:00",
     "engagement": 0
   },
   {
@@ -944,7 +956,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/buysteelcom-launches-with-instant-metal-quotes-and-online-ordering",
     "author": null,
     "published_at": "2026-08-18T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480106+00:00",
+    "collected_at": "2026-09-19T10:32:37.349963+00:00",
     "engagement": 0
   },
   {
@@ -956,7 +968,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/measurement/laser-scanner-captures-58-million-points-per-second",
     "author": null,
     "published_at": "2026-08-18T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480118+00:00",
+    "collected_at": "2026-09-19T10:32:37.349976+00:00",
     "engagement": 0
   },
   {
@@ -968,7 +980,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-horizontal-machining-centre-is-designed-for-large-heavy-parts",
     "author": null,
     "published_at": "2026-08-18T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480133+00:00",
+    "collected_at": "2026-09-19T10:32:37.349988+00:00",
     "engagement": 0
   },
   {
@@ -980,7 +992,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/ironworker-tooling-offered-with-build-your-own-punch-and-die-package-option",
     "author": null,
     "published_at": "2026-08-17T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480143+00:00",
+    "collected_at": "2026-09-19T10:32:37.349998+00:00",
     "engagement": 0
   },
   {
@@ -992,7 +1004,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-graphite-milling-machine-ships-as-automation-ready",
     "author": null,
     "published_at": "2026-08-17T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480155+00:00",
+    "collected_at": "2026-09-19T10:32:37.350009+00:00",
     "engagement": 0
   },
   {
@@ -1004,7 +1016,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/automationsoftware/push-your-competitive-advantage",
     "author": null,
     "published_at": "2026-08-17T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480167+00:00",
+    "collected_at": "2026-09-19T10:32:37.350020+00:00",
     "engagement": 0
   },
   {
@@ -1016,7 +1028,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-automatic-band-saw-is-fully-enclosed",
     "author": null,
     "published_at": "2026-08-14T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480178+00:00",
+    "collected_at": "2026-09-19T10:32:37.350031+00:00",
     "engagement": 0
   },
   {
@@ -1028,7 +1040,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/measurement/scanner-provides-flexible-3d-inspection-on-the-shop-floor",
     "author": null,
     "published_at": "2026-08-14T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480190+00:00",
+    "collected_at": "2026-09-19T10:32:37.350042+00:00",
     "engagement": 0
   },
   {
@@ -1040,7 +1052,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/compact-variable-speed-saw-cuts-many-types-of-metal",
     "author": null,
     "published_at": "2026-08-14T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480200+00:00",
+    "collected_at": "2026-09-19T10:32:37.350052+00:00",
     "engagement": 0
   },
   {
@@ -1052,7 +1064,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/metalworking/imts-visit-for-the-technology-stay-for-the-conversations",
     "author": null,
     "published_at": "2026-08-14T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480216+00:00",
+    "collected_at": "2026-09-19T10:32:37.350066+00:00",
     "engagement": 0
   },
   {
@@ -1064,7 +1076,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/trumpf-partners-with-cutlite-to-expand-laser-and-tube-cutting-portfolio",
     "author": null,
     "published_at": "2026-08-13T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480229+00:00",
+    "collected_at": "2026-09-19T10:32:37.350079+00:00",
     "engagement": 0
   },
   {
@@ -1076,7 +1088,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/irving-shipbuilding-investment-modernizes-nscc-welding-and-fab-shops",
     "author": null,
     "published_at": "2026-08-13T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480244+00:00",
+    "collected_at": "2026-09-19T10:32:37.350093+00:00",
     "engagement": 0
   },
   {
@@ -1088,7 +1100,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/metal-formers-remain-resilient-as-economic-uncertainty-persists",
     "author": null,
     "published_at": "2026-08-13T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480257+00:00",
+    "collected_at": "2026-09-19T10:32:37.350105+00:00",
     "engagement": 0
   },
   {
@@ -1100,7 +1112,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/measurement/imts-2026-preview-coordinate-measuring-machine-delivers-connected-quality-control",
     "author": null,
     "published_at": "2026-08-13T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480269+00:00",
+    "collected_at": "2026-09-19T10:32:37.350116+00:00",
     "engagement": 0
   },
   {
@@ -1112,7 +1124,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/robotic-deburring-package-integrates-with-existing-cnc-machinery",
     "author": null,
     "published_at": "2026-08-12T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480282+00:00",
+    "collected_at": "2026-09-19T10:32:37.350129+00:00",
     "engagement": 0
   },
   {
@@ -1124,7 +1136,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/compact-horizontal-bending-and-straightening-press-delivers-88-tons-of-force",
     "author": null,
     "published_at": "2026-08-12T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480293+00:00",
+    "collected_at": "2026-09-19T10:32:37.350140+00:00",
     "engagement": 0
   },
   {
@@ -1136,7 +1148,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-solid-carbide-end-mills-now-available-in-inch-sizes",
     "author": null,
     "published_at": "2026-08-12T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480305+00:00",
+    "collected_at": "2026-09-19T10:32:37.350151+00:00",
     "engagement": 0
   },
   {
@@ -1148,7 +1160,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/blog/welding/building-a-workforce-that-stays",
     "author": null,
     "published_at": "2026-08-12T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480316+00:00",
+    "collected_at": "2026-09-19T10:32:37.350163+00:00",
     "engagement": 0
   },
   {
@@ -1160,7 +1172,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/blm-group-usa-names-new-product-manager",
     "author": null,
     "published_at": "2026-08-11T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480327+00:00",
+    "collected_at": "2026-09-19T10:32:37.350173+00:00",
     "engagement": 0
   },
   {
@@ -1172,7 +1184,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-positive-turning-insert-delivers-high-surface-finishes",
     "author": null,
     "published_at": "2026-08-11T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480339+00:00",
+    "collected_at": "2026-09-19T10:32:37.350184+00:00",
     "engagement": 0
   },
   {
@@ -1184,7 +1196,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/high-power-laser-system-handles-large-format-sheet-cutting",
     "author": null,
     "published_at": "2026-08-11T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480354+00:00",
+    "collected_at": "2026-09-19T10:32:37.350196+00:00",
     "engagement": 0
   },
   {
@@ -1196,7 +1208,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/imts-2026-spotlights-manufacturings-leap-towards-ai",
     "author": null,
     "published_at": "2026-08-11T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480367+00:00",
+    "collected_at": "2026-09-19T10:32:37.350211+00:00",
     "engagement": 0
   },
   {
@@ -1208,7 +1220,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-replaceable-tip-drill-systems-reduce-downtime",
     "author": null,
     "published_at": "2026-08-10T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480380+00:00",
+    "collected_at": "2026-09-19T10:32:37.350223+00:00",
     "engagement": 0
   },
   {
@@ -1220,7 +1232,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/welding/backpack-kit-organizes-oxyfuel-cutting-gear",
     "author": null,
     "published_at": "2026-08-10T08:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480394+00:00",
+    "collected_at": "2026-09-19T10:32:37.350237+00:00",
     "engagement": 0
   },
   {
@@ -1232,7 +1244,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/automationsoftware/technology-spotlight-machine-tool-cybersecurity",
     "author": null,
     "published_at": "2026-08-10T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480406+00:00",
+    "collected_at": "2026-09-19T10:32:37.350248+00:00",
     "engagement": 0
   },
   {
@@ -1244,7 +1256,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-machining-centre-combines-milling-and-turning",
     "author": null,
     "published_at": "2026-08-07T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480419+00:00",
+    "collected_at": "2026-09-19T10:32:37.350261+00:00",
     "engagement": 0
   },
   {
@@ -1256,7 +1268,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/article/fabricating/6-steps-toward-sheet-metal-bending-perfection",
     "author": null,
     "published_at": "2026-08-07T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480433+00:00",
+    "collected_at": "2026-09-19T10:32:37.350273+00:00",
     "engagement": 0
   },
   {
@@ -1268,7 +1280,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/imts-2026-preview-slot-broaching-tools-for-small-diameter-applications",
     "author": null,
     "published_at": "2026-08-06T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480445+00:00",
+    "collected_at": "2026-09-19T10:32:37.350284+00:00",
     "engagement": 0
   },
   {
@@ -1280,7 +1292,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/modular-jet-spindles-enable-high-speed-machining-with-small-tools",
     "author": null,
     "published_at": "2026-08-06T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480457+00:00",
+    "collected_at": "2026-09-19T10:32:37.350297+00:00",
     "engagement": 0
   },
   {
@@ -1292,7 +1304,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-swiss-style-tooling-expands-machining-capabilities",
     "author": null,
     "published_at": "2026-08-05T10:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480470+00:00",
+    "collected_at": "2026-09-19T10:32:37.350309+00:00",
     "engagement": 0
   },
   {
@@ -1304,19 +1316,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/blog/healthsafety/preventing-hand-arm-vibration-syndrome",
     "author": null,
     "published_at": "2026-08-05T06:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480486+00:00",
-    "engagement": 0
-  },
-  {
-    "source": "rss:https://www.canadianmetalworking.com/rss",
-    "source_type": "rss",
-    "external_id": "https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/imts-2026-returns-to-chicago",
-    "title": "IMTS 2026 returns to Chicago",
-    "body": "IMTS returns to Chicago’s McCormick Place Sept. 14-19, 2026.",
-    "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/imts-2026-returns-to-chicago",
-    "author": null,
-    "published_at": "2026-08-04T12:00:00-05:00",
-    "collected_at": "2026-09-18T10:48:39.480499+00:00",
+    "collected_at": "2026-09-19T10:32:37.350323+00:00",
     "engagement": 0
   }
 ]
