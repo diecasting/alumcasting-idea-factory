@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-22T11:12:08.388351+00:00
+Generated: 2026-09-23T11:03:32.174540+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 10
-- After deduplication: 10
+- Relevant (after filtering): 9
+- After deduplication: 9
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 10
+- Relevant signals: 9
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (10)
+## Cnc Machining (9)
 
 ### [HIGH] Flex Machine Tools acquires TARUS
 - Type: tooling_problem
@@ -70,13 +70,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/automationsoftware/robotic-deburring-package-integrates-with-existing-cnc-machinery
 - Matched: cnc, cnc machin
-
-### [MEDIUM] IMTS 2026 Preview: 5-axis machining centre combines milling and turning
-- Type: other
-- Relevance score: 0.52
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-machining-centre-combines-milling-and-turning
-- Matched: 5-axis, milling
 
 ### [MEDIUM] IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts
 - Type: other
