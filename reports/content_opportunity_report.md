@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-09-28T13:17:17.236180+00:00
+Generated: 2026-09-29T12:24:13.462281+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 8
-- After deduplication: 8
+- Relevant (after filtering): 9
+- After deduplication: 9
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 8
+- Relevant signals: 9
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (8)
+## Cnc Machining (9)
 
 ### [HIGH] Flex Machine Tools acquires TARUS
 - Type: tooling_problem
@@ -63,6 +63,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts
 - Matched: milling, tool
+
+### [MEDIUM] Makera Carvera Air brings CNC machining to small businesses
+- Type: other
+- Relevance score: 0.52
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/makera-carvera-air-brings-cnc-machining-to-small-businesses/
+- Matched: cnc, cnc machin
 
 ### [MEDIUM] IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts
 - Type: other
