@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-02T12:07:33.724097+00:00
+Generated: 2026-10-03T11:18:40.162909+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -36,6 +36,13 @@ _No problem signals carried site-coverage evidence in this run._
 
 ## Cnc Machining (6)
 
+### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
+- Type: tooling_problem
+- Relevance score: 0.57
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
+- Matched: cnc, cnc machin, tool
+
 ### [HIGH] Flex Machine Tools acquires TARUS
 - Type: tooling_problem
 - Relevance score: 0.57
@@ -70,10 +77,3 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts
 - Matched: 5-axis
-
-### [MEDIUM] IMTS 2026 Preview: Waterjet cutting system offers improved abrasive hopper
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/imts-2026-preview-waterjet-cutting-system-offers-improved-abrasive-hopper
-- Matched: machining center
