@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.902295+00:00",
+    "collected_at": "2026-10-04T11:59:11.873722+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -27,7 +27,7 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 1d ago (fresh)"
+      "published 2d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.903174+00:00",
+    "collected_at": "2026-10-04T11:59:11.874708+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -54,14 +54,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 17.72,
-    "opportunity_score": 23.11,
+    "problem_score": 17.38,
+    "opportunity_score": 22.94,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 29d ago (aging)"
+      "published 30d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -77,7 +77,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-portal-milling-machine-cuts-lightweight-material",
     "author": null,
     "published_at": "2026-08-26T12:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.903483+00:00",
+    "collected_at": "2026-10-04T11:59:11.875069+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -95,7 +95,7 @@
     "score_reasons": [
       "technical specificity detected (5-axis, machin, milling)",
       "no engagement signal",
-      "published 38d ago (stale)"
+      "published 39d ago (stale)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -111,7 +111,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs",
     "author": null,
     "published_at": "2026-09-01T10:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.903318+00:00",
+    "collected_at": "2026-10-04T11:59:11.874877+00:00",
     "signal_type": "process_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -121,13 +121,13 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 1.72,
-    "opportunity_score": 13.61,
+    "problem_score": 1.38,
+    "opportunity_score": 13.44,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 32d ago (aging)"
+      "published 33d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -143,7 +143,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-machine-automatically-indexes-changes-milling-inserts",
     "author": null,
     "published_at": "2026-08-25T08:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.903559+00:00",
+    "collected_at": "2026-10-04T11:59:11.875164+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -160,7 +160,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 39d ago (stale)"
+      "published 40d ago (stale)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -176,7 +176,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
     "author": null,
     "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-10-03T11:18:40.903186+00:00",
+    "collected_at": "2026-10-04T11:59:11.874723+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -185,14 +185,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 17.69,
-    "opportunity_score": 20.34,
+    "problem_score": 17.35,
+    "opportunity_score": 20.18,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 29d ago (aging)"
+      "published 30d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
