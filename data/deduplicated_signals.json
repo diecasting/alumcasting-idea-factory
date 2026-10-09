@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-08T13:03:14.329097+00:00",
+    "collected_at": "2026-10-09T12:49:43.236358+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -27,7 +27,7 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 6d ago (fresh)"
+      "published 7d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-10-08T13:03:14.329922+00:00",
+    "collected_at": "2026-10-09T12:49:43.237261+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -54,46 +54,47 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 16.03,
-    "opportunity_score": 22.27,
+    "problem_score": 15.7,
+    "opportunity_score": 22.1,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 34d ago (aging)"
+      "published 35d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
     "site_coverage": null
   },
   {
-    "id": "d7877b887d87df9a",
+    "id": "3039c0b15bd69bef",
     "source": "rss:https://www.canadianmetalworking.com/rss",
     "source_type": "rss",
     "topic": "cnc_machining",
-    "title": "Group kicks off a revolution in CNCs",
-    "text": "Group kicks off a revolution in CNCs. Students are in the process of commercializing one application of the framework: a technology they call Numerical Control as a Service.",
-    "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs",
+    "title": "Tooling innovations expand options for turning, milling and threading",
+    "text": "Tooling innovations expand options for turning, milling and threading. The portfolio spans turning, milling, threading and tooling systems, and includes seven product lines.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
-    "published_at": "2026-09-01T10:00:00-05:00",
-    "collected_at": "2026-10-08T13:03:14.330069+00:00",
-    "signal_type": "process_problem",
+    "published_at": "2026-10-08T10:00:00-05:00",
+    "collected_at": "2026-10-09T12:49:43.236049+00:00",
+    "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
     "matched_keywords": [
-      "cnc",
-      "process"
+      "milling",
+      "tool"
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 0.03,
-    "opportunity_score": 12.77,
+    "problem_score": 22.0,
+    "opportunity_score": 23.75,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
+      "technical specificity detected (milling)",
       "no engagement signal",
-      "published 37d ago (aging)"
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -109,7 +110,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
     "author": null,
     "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-10-08T13:03:14.329935+00:00",
+    "collected_at": "2026-10-09T12:49:43.237277+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -118,14 +119,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 16.0,
-    "opportunity_score": 19.5,
+    "problem_score": 15.67,
+    "opportunity_score": 19.34,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 34d ago (aging)"
+      "published 35d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,

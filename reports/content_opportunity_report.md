@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-08T13:03:12.339498+00:00
+Generated: 2026-10-09T12:49:41.586405+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -50,12 +50,12 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus
 - Matched: cnc, cnc machin, tool
 
-### [HIGH] Group kicks off a revolution in CNCs
-- Type: process_problem
+### [HIGH] Tooling innovations expand options for turning, milling and threading
+- Type: tooling_problem
 - Relevance score: 0.51
 - Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/group-kicks-off-a-revolution-in-cncs
-- Matched: cnc, process
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading
+- Matched: milling, tool
 
 ### [MEDIUM] IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts
 - Type: other
