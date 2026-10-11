@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-10T12:07:55.775408+00:00",
+    "collected_at": "2026-10-11T12:21:38.028197+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 24.68,
-    "opportunity_score": 26.59,
+    "problem_score": 24.34,
+    "opportunity_score": 26.42,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 8d ago (aging)"
+      "published 9d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-10-10T12:07:55.776073+00:00",
+    "collected_at": "2026-10-11T12:21:38.028646+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -54,14 +54,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 15.37,
-    "opportunity_score": 21.93,
+    "problem_score": 15.04,
+    "opportunity_score": 21.77,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 36d ago (aging)"
+      "published 37d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -77,7 +77,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-10T12:07:55.775192+00:00",
+    "collected_at": "2026-10-11T12:21:38.028041+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -94,7 +94,7 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 2d ago (fresh)"
+      "published 3d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -110,7 +110,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
     "author": null,
     "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-10-10T12:07:55.776083+00:00",
+    "collected_at": "2026-10-11T12:21:38.028654+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -119,14 +119,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 15.35,
-    "opportunity_score": 19.18,
+    "problem_score": 15.01,
+    "opportunity_score": 19.0,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 36d ago (aging)"
+      "published 37d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
