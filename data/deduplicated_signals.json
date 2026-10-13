@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-12T14:49:26.366849+00:00",
+    "collected_at": "2026-10-13T13:49:32.757830+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.97,
-    "opportunity_score": 26.23,
+    "problem_score": 23.66,
+    "opportunity_score": 26.08,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 10d ago (aging)"
+      "published 11d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus",
     "author": null,
     "published_at": "2026-09-04T10:00:00-05:00",
-    "collected_at": "2026-10-12T14:49:26.367708+00:00",
+    "collected_at": "2026-10-13T13:49:32.758673+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -61,7 +61,7 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 38d ago (stale)"
+      "published 39d ago (stale)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -77,7 +77,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-12T14:49:26.366563+00:00",
+    "collected_at": "2026-10-13T13:49:32.757538+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -94,23 +94,23 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 4d ago (fresh)"
+      "published 5d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
     "site_coverage": null
   },
   {
-    "id": "c0996382b655d4d9",
+    "id": "a2f395a5a1f55605",
     "source": "rss:https://www.canadianmetalworking.com/rss",
     "source_type": "rss",
     "topic": "cnc_machining",
-    "title": "IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts",
-    "text": "IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts. Mitsui Seiki USA will introduce the Vertex55X Neo vertical machining centre with FANUC 31i-B5 Plus control at IMTS 2026 in booth #338700.",
-    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts",
+    "title": "ORNL and Mazak collaborate for WAAM platform",
+    "text": "ORNL and Mazak collaborate for WAAM platform. The platform combines a Mazak VC Ez-20X 5-axis machining centre with a Fronius wire arc additive manufacturing system in one automated framework.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform",
     "author": null,
-    "published_at": "2026-09-04T08:00:00-05:00",
-    "collected_at": "2026-10-12T14:49:26.367722+00:00",
+    "published_at": "2026-10-12T10:00:00-05:00",
+    "collected_at": "2026-10-13T13:49:32.757376+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -119,14 +119,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 15.0,
-    "opportunity_score": 19.0,
+    "problem_score": 25.0,
+    "opportunity_score": 24.0,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 38d ago (stale)"
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,

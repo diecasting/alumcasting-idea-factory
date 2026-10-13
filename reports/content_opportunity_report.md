@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-12T14:49:24.268337+00:00
+Generated: 2026-10-13T13:49:31.455252+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -57,9 +57,9 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading
 - Matched: milling, tool
 
-### [MEDIUM] IMTS 2026 Preview: 5-Axis vertical machining centre offers repeatability for complex, hard-to-cut parts
+### [MEDIUM] ORNL and Mazak collaborate for WAAM platform
 - Type: other
 - Relevance score: 0.46
 - Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/imts-2026-preview-5-axis-vertical-machining-centre-offers-repeatability-for-complex-hard-to-cut-parts
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform
 - Matched: 5-axis
