@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-13T13:49:31.455252+00:00
+Generated: 2026-10-14T11:26:54.807926+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 4
-- After deduplication: 4
+- Relevant (after filtering): 3
+- After deduplication: 3
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 4
+- Relevant signals: 3
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,20 +34,13 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (4)
+## Cnc Machining (3)
 
 ### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
 - Type: tooling_problem
 - Relevance score: 0.57
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
-- Matched: cnc, cnc machin, tool
-
-### [HIGH] Flex Machine Tools acquires TARUS
-- Type: tooling_problem
-- Relevance score: 0.57
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/news/fabricating/flex-machine-tools-acquires-tarus
 - Matched: cnc, cnc machin, tool
 
 ### [HIGH] Tooling innovations expand options for turning, milling and threading
