@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-14T11:26:55.839562+00:00",
+    "collected_at": "2026-10-15T11:03:37.169722+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.35,
-    "opportunity_score": 25.93,
+    "problem_score": 23.03,
+    "opportunity_score": 25.77,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 12d ago (aging)"
+      "published 13d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-14T11:26:55.839254+00:00",
+    "collected_at": "2026-10-15T11:03:37.169438+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -60,7 +60,70 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 6d ago (fresh)"
+      "published 7d ago (fresh)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "e4f6414c6fd715d1",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "FABTECH 2026 Preview: Plate processing system delivers power, precision for milling operations",
+    "text": "FABTECH 2026 Preview: Plate processing system delivers power, precision for milling operations. At FABTECH 2026 in booth #C2037, Tecoi USA will feature the TRF plate processing machine.",
+    "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-plate-processing-system-delivers-power-precision-for-milling-operations",
+    "author": null,
+    "published_at": "2026-10-14T10:00:00-05:00",
+    "collected_at": "2026-10-15T11:03:37.169158+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "milling"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 25.0,
+    "opportunity_score": 24.0,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (machin, milling)",
+      "no engagement signal",
+      "published 1d ago (fresh)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "7e03992b4d57fed8",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "casting",
+    "title": "One drill body handles multiple exchangeable tips",
+    "text": "One drill body handles multiple exchangeable tips. The Seco X Tip drill has one modular drill body and multiple exchangeable carbide tips, handling steels, stainless steels, and cast iron.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips",
+    "author": null,
+    "published_at": "2026-10-14T08:00:00-05:00",
+    "collected_at": "2026-10-15T11:03:37.169174+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "cast"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 10.0,
+    "opportunity_score": 16.5,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "no engagement signal",
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -76,7 +139,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform",
     "author": null,
     "published_at": "2026-10-12T10:00:00-05:00",
-    "collected_at": "2026-10-14T11:26:55.839123+00:00",
+    "collected_at": "2026-10-15T11:03:37.169285+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -92,7 +155,7 @@
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 2d ago (fresh)"
+      "published 3d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
