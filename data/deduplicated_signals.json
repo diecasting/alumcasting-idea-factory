@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.517223+00:00",
+    "collected_at": "2026-10-20T11:08:31.195292+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,47 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 21.67,
-    "opportunity_score": 25.09,
+    "problem_score": 21.36,
+    "opportunity_score": 24.93,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 17d ago (aging)"
+      "published 18d ago (aging)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "bbdc8dbd572696c8",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Solid-carbide milling cutters offer long tool life in hardened materials",
+    "text": "Solid-carbide milling cutters offer long tool life in hardened materials. Walter has developed the MD480 Advance ball nose end mill, MD780 Advance orbital plunge mill, and MD880 Advance circle segment milling cutter.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials",
+    "author": null,
+    "published_at": "2026-10-19T10:00:00-05:00",
+    "collected_at": "2026-10-20T11:08:31.194502+00:00",
+    "signal_type": "tooling_problem",
+    "priority": "high",
+    "relevance_score": 0.51,
+    "matched_keywords": [
+      "milling",
+      "tool"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 22.0,
+    "opportunity_score": 23.75,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (milling)",
+      "no engagement signal",
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +76,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.516941+00:00",
+    "collected_at": "2026-10-20T11:08:31.194996+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -53,14 +86,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 20.7,
-    "opportunity_score": 23.1,
+    "problem_score": 20.39,
+    "opportunity_score": 22.95,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 11d ago (aging)"
+      "published 12d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -76,7 +109,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutter-expands-to-16-mm-diameter",
     "author": null,
     "published_at": "2026-10-15T06:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.516661+00:00",
+    "collected_at": "2026-10-20T11:08:31.194702+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -92,7 +125,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling, steel)",
       "no engagement signal",
-      "published 4d ago (fresh)"
+      "published 5d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -108,7 +141,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-plate-processing-system-delivers-power-precision-for-milling-operations",
     "author": null,
     "published_at": "2026-10-14T10:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.516700+00:00",
+    "collected_at": "2026-10-20T11:08:31.194745+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -124,7 +157,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 5d ago (fresh)"
+      "published 6d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -140,7 +173,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips",
     "author": null,
     "published_at": "2026-10-14T08:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.516713+00:00",
+    "collected_at": "2026-10-20T11:08:31.194760+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -155,7 +188,7 @@
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 5d ago (fresh)"
+      "published 6d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -171,7 +204,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform",
     "author": null,
     "published_at": "2026-10-12T10:00:00-05:00",
-    "collected_at": "2026-10-19T12:34:17.516814+00:00",
+    "collected_at": "2026-10-20T11:08:31.194868+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -180,14 +213,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 25.0,
-    "opportunity_score": 24.0,
+    "problem_score": 24.72,
+    "opportunity_score": 23.86,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 7d ago (fresh)"
+      "published 8d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,

@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-19T12:34:16.205046+00:00
+Generated: 2026-10-20T11:08:29.949442+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 6
-- After deduplication: 6
+- Relevant (after filtering): 7
+- After deduplication: 7
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 6
+- Relevant signals: 7
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (5)
+## Cnc Machining (6)
 
 ### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
 - Type: tooling_problem
@@ -51,6 +51,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
 - Matched: cnc, cnc machin, tool
+
+### [HIGH] Solid-carbide milling cutters offer long tool life in hardened materials
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials
+- Matched: milling, tool
 
 ### [HIGH] Tooling innovations expand options for turning, milling and threading
 - Type: tooling_problem
