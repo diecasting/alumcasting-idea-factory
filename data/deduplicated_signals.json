@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.195292+00:00",
+    "collected_at": "2026-10-21T11:24:29.275798+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,80 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 21.36,
-    "opportunity_score": 24.93,
+    "problem_score": 21.02,
+    "opportunity_score": 24.76,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 18d ago (aging)"
+      "published 19d ago (aging)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "12ebef6a1d960c44",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Vertical turning centre combines large-part machining with integrated material handling",
+    "text": "Vertical turning centre combines large-part machining with integrated material handling. Murata Machinery USA has introduced the MVH600 automated vertical CNC turning centre.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/vertical-turning-centre-combines-large-part-machining-with-integrated-material-handling",
+    "author": null,
+    "published_at": "2026-10-20T10:00:00-05:00",
+    "collected_at": "2026-10-21T11:24:29.275232+00:00",
+    "signal_type": "material_problem",
+    "priority": "high",
+    "relevance_score": 0.51,
+    "matched_keywords": [
+      "cnc",
+      "material"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 25.0,
+    "opportunity_score": 25.25,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (cnc, machin)",
+      "no engagement signal",
+      "published 1d ago (fresh)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "741f9e44115a5a8e",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "Milling grade improves tool life in titanium machining",
+    "text": "Milling grade improves tool life in titanium machining. Sandvik Coromant has introduced GC1250, a milling grade for titanium alloys.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-improves-tool-life-in-titanium-machining",
+    "author": null,
+    "published_at": "2026-10-20T06:00:00-05:00",
+    "collected_at": "2026-10-21T11:24:29.275251+00:00",
+    "signal_type": "material_problem",
+    "priority": "high",
+    "relevance_score": 0.51,
+    "matched_keywords": [
+      "grade",
+      "milling"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 25.0,
+    "opportunity_score": 25.25,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (machin, milling, titanium)",
+      "no engagement signal",
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +109,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials",
     "author": null,
     "published_at": "2026-10-19T10:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194502+00:00",
+    "collected_at": "2026-10-21T11:24:29.275271+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -60,7 +126,7 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 1d ago (fresh)"
+      "published 2d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -76,7 +142,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194996+00:00",
+    "collected_at": "2026-10-21T11:24:29.275590+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -86,14 +152,46 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 20.39,
-    "opportunity_score": 22.95,
+    "problem_score": 20.05,
+    "opportunity_score": 22.77,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 12d ago (aging)"
+      "published 13d ago (aging)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "5fcabca959ca05e9",
+    "source": "rss:https://www.engineering.com/feed/",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "FANUC opens largest U.S. robotics training center",
+    "text": "FANUC opens largest U.S. robotics training center. The 132,000-square-foot Michigan facility expands training capacity to about 17,500 participants annually, supporting skills development in automation and CNC. The post FANUC opens largest U.S. robotics training center appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/fanuc-opens-largest-u-s-robotics-training-center/",
+    "author": null,
+    "published_at": "2026-10-21T09:50:59+00:00",
+    "collected_at": "2026-10-21T11:24:28.597000+00:00",
+    "signal_type": "other",
+    "priority": "medium",
+    "relevance_score": 0.46,
+    "matched_keywords": [
+      "cnc"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 22.0,
+    "opportunity_score": 22.5,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (cnc)",
+      "no engagement signal",
+      "published 0d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -109,7 +207,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutter-expands-to-16-mm-diameter",
     "author": null,
     "published_at": "2026-10-15T06:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194702+00:00",
+    "collected_at": "2026-10-21T11:24:29.275387+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -125,7 +223,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling, steel)",
       "no engagement signal",
-      "published 5d ago (fresh)"
+      "published 6d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -141,7 +239,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-plate-processing-system-delivers-power-precision-for-milling-operations",
     "author": null,
     "published_at": "2026-10-14T10:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194745+00:00",
+    "collected_at": "2026-10-21T11:24:29.275414+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -157,7 +255,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 6d ago (fresh)"
+      "published 7d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -173,7 +271,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips",
     "author": null,
     "published_at": "2026-10-14T08:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194760+00:00",
+    "collected_at": "2026-10-21T11:24:29.275424+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -188,7 +286,7 @@
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 6d ago (fresh)"
+      "published 7d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -204,7 +302,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform",
     "author": null,
     "published_at": "2026-10-12T10:00:00-05:00",
-    "collected_at": "2026-10-20T11:08:31.194868+00:00",
+    "collected_at": "2026-10-21T11:24:29.275496+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -213,14 +311,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 24.72,
-    "opportunity_score": 23.86,
+    "problem_score": 24.38,
+    "opportunity_score": 23.69,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 8d ago (aging)"
+      "published 9d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
