@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-21T11:24:28.087509+00:00
+Generated: 2026-10-22T11:24:25.746475+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 10
-- After deduplication: 10
+- Relevant (after filtering): 11
+- After deduplication: 11
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 10
+- Relevant signals: 11
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (9)
+## Cnc Machining (10)
 
 ### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
 - Type: tooling_problem
@@ -51,6 +51,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
 - Matched: cnc, cnc machin, tool
+
+### [HIGH] Milling tools reduce power demand in aluminum machining
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-tools-reduce-power-demand-in-aluminum-machining
+- Matched: milling, tool
 
 ### [HIGH] Vertical turning centre combines large-part machining with integrated material handling
 - Type: material_problem
@@ -80,12 +87,12 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading
 - Matched: milling, tool
 
-### [MEDIUM] FANUC opens largest U.S. robotics training center
+### [MEDIUM] Mini boring bars designed for Swiss-type lathes
 - Type: other
 - Relevance score: 0.46
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/fanuc-opens-largest-u-s-robotics-training-center/
-- Matched: cnc
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/mini-boring-bars-designed-for-swiss-type-lathes
+- Matched: lathe
 
 ### [MEDIUM] Solid carbide milling cutter expands to 16-mm diameter
 - Type: other
