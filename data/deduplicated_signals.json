@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted",
     "author": null,
     "published_at": "2026-10-02T08:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338893+00:00",
+    "collected_at": "2026-10-25T10:58:53.400048+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -20,14 +20,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 20.03,
-    "opportunity_score": 24.27,
+    "problem_score": 19.69,
+    "opportunity_score": 24.09,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 22d ago (aging)"
+      "published 23d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -43,7 +43,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-tools-reduce-power-demand-in-aluminum-machining",
     "author": null,
     "published_at": "2026-10-21T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338280+00:00",
+    "collected_at": "2026-10-25T10:58:53.399124+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -60,7 +60,7 @@
     "score_reasons": [
       "technical specificity detected (aluminum, machin, milling)",
       "no engagement signal",
-      "published 3d ago (fresh)"
+      "published 4d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -76,7 +76,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/vertical-turning-centre-combines-large-part-machining-with-integrated-material-handling",
     "author": null,
     "published_at": "2026-10-20T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338319+00:00",
+    "collected_at": "2026-10-25T10:58:53.399183+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -93,7 +93,7 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 4d ago (fresh)"
+      "published 5d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -109,7 +109,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-improves-tool-life-in-titanium-machining",
     "author": null,
     "published_at": "2026-10-20T06:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338336+00:00",
+    "collected_at": "2026-10-25T10:58:53.399210+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -126,7 +126,7 @@
     "score_reasons": [
       "technical specificity detected (machin, milling, titanium)",
       "no engagement signal",
-      "published 4d ago (fresh)"
+      "published 5d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -142,7 +142,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials",
     "author": null,
     "published_at": "2026-10-19T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338356+00:00",
+    "collected_at": "2026-10-25T10:58:53.399240+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -159,7 +159,7 @@
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 5d ago (fresh)"
+      "published 6d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -175,7 +175,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading",
     "author": null,
     "published_at": "2026-10-08T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338682+00:00",
+    "collected_at": "2026-10-25T10:58:53.399748+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -185,14 +185,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.06,
-    "opportunity_score": 22.28,
+    "problem_score": 18.72,
+    "opportunity_score": 22.11,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 16d ago (aging)"
+      "published 17d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -208,7 +208,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/mini-boring-bars-designed-for-swiss-type-lathes",
     "author": null,
     "published_at": "2026-10-22T06:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338258+00:00",
+    "collected_at": "2026-10-25T10:58:53.399090+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -223,7 +223,7 @@
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 2d ago (fresh)"
+      "published 3d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -239,7 +239,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutter-expands-to-16-mm-diameter",
     "author": null,
     "published_at": "2026-10-15T06:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338474+00:00",
+    "collected_at": "2026-10-25T10:58:53.399419+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -248,14 +248,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 24.34,
-    "opportunity_score": 23.67,
+    "problem_score": 24.0,
+    "opportunity_score": 23.5,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling, steel)",
       "no engagement signal",
-      "published 9d ago (aging)"
+      "published 10d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -271,7 +271,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-plate-processing-system-delivers-power-precision-for-milling-operations",
     "author": null,
     "published_at": "2026-10-14T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338501+00:00",
+    "collected_at": "2026-10-25T10:58:53.399461+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -280,14 +280,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 24.06,
-    "opportunity_score": 23.53,
+    "problem_score": 23.72,
+    "opportunity_score": 23.36,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 10d ago (aging)"
+      "published 11d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -303,7 +303,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips",
     "author": null,
     "published_at": "2026-10-14T08:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338511+00:00",
+    "collected_at": "2026-10-25T10:58:53.399476+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -312,13 +312,13 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 9.03,
-    "opportunity_score": 16.02,
+    "problem_score": 8.69,
+    "opportunity_score": 15.85,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 10d ago (aging)"
+      "published 11d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -334,7 +334,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform",
     "author": null,
     "published_at": "2026-10-12T10:00:00-05:00",
-    "collected_at": "2026-10-24T10:33:05.338589+00:00",
+    "collected_at": "2026-10-25T10:58:53.399591+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -343,14 +343,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.4,
-    "opportunity_score": 23.2,
+    "problem_score": 23.06,
+    "opportunity_score": 23.03,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin)",
       "no engagement signal",
-      "published 12d ago (aging)"
+      "published 13d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
