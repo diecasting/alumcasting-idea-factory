@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-26T12:30:22.476058+00:00
+Generated: 2026-10-27T11:48:31.009504+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 11
-- After deduplication: 11
+- Relevant (after filtering): 12
+- After deduplication: 12
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 11
+- Relevant signals: 12
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (10)
+## Cnc Machining (11)
 
 ### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
 - Type: tooling_problem
@@ -51,6 +51,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
 - Matched: cnc, cnc machin, tool
+
+### [HIGH] Double-column five-axis milling machine supports heavy-duty machining of large components
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-five-axis-milling-machine-supports-heavy-duty-machining-of-large-components
+- Matched: milling, tool
 
 ### [HIGH] Milling tools reduce power demand in aluminum machining
 - Type: tooling_problem
