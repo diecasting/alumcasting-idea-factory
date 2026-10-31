@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-10-30T12:23:36.823779+00:00
+Generated: 2026-10-31T11:53:48.899240+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 13
-- After deduplication: 13
+- Relevant (after filtering): 14
+- After deduplication: 14
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 13
+- Relevant signals: 14
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (12)
+## Cnc Machining (13)
 
 ### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
 - Type: tooling_problem
@@ -93,6 +93,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading
 - Matched: milling, tool
+
+### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
+- Type: other
+- Relevance score: 0.46
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/cnc-control-features-32-in-touchscreen-ai-assisted-programming
+- Matched: cnc
 
 ### [MEDIUM] Double-sided high-feed milling cutter reduces machining time
 - Type: other
