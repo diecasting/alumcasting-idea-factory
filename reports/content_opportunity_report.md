@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-02T15:06:20.460549+00:00
+Generated: 2026-11-03T13:50:44.903247+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -45,12 +45,12 @@ _No problem signals carried site-coverage evidence in this run._
 
 ## Cnc Machining (13)
 
-### [HIGH] FABTECH 2026 Preview: Waterjet, CNC machining systems, and tapping arms to be highlighted
-- Type: tooling_problem
-- Relevance score: 0.57
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-waterjet-cnc-machining-systems-and-tapping-arms-to-be-highlighted
-- Matched: cnc, cnc machin, tool
+### [HIGH] What I learned from 45 years of CAD development: Doing more with less
+- Type: question
+- Relevance score: 0.51
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/what-i-learned-from-45-years-of-cad-development-doing-more-with-less/
+- Matched: g code, what
 
 ### [HIGH] Double-column five-axis milling machine supports heavy-duty machining of large components
 - Type: tooling_problem
