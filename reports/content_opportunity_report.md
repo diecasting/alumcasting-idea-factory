@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-03T13:50:44.903247+00:00
+Generated: 2026-11-04T13:58:00.858478+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -45,12 +45,12 @@ _No problem signals carried site-coverage evidence in this run._
 
 ## Cnc Machining (13)
 
-### [HIGH] What I learned from 45 years of CAD development: Doing more with less
-- Type: question
+### [HIGH] Milling grade resists heat and built-up edge in difficult materials
+- Type: material_problem
 - Relevance score: 0.51
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/what-i-learned-from-45-years-of-cad-development-doing-more-with-less/
-- Matched: g code, what
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-resists-heat-and-built-up-edge-in-difficult-materials
+- Matched: grade, milling
 
 ### [HIGH] Double-column five-axis milling machine supports heavy-duty machining of large components
 - Type: tooling_problem
