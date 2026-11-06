@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-05T14:18:24.322108+00:00
+Generated: 2026-11-06T13:56:08.602401+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 14
-- After deduplication: 14
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 14
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,7 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (13)
+## Cnc Machining (12)
 
 ### [HIGH] Milling grade resists heat and built-up edge in difficult materials
 - Type: material_problem
@@ -85,13 +85,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Relevance score: 0.51
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials
-- Matched: milling, tool
-
-### [HIGH] Tooling innovations expand options for turning, milling and threading
-- Type: tooling_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/tooling-innovations-expand-options-for-turning-milling-and-threading
 - Matched: milling, tool
 
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
