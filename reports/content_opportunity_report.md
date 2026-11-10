@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-09T15:37:49.014369+00:00
+Generated: 2026-11-10T14:33:16.504784+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 13
-- After deduplication: 13
+- Relevant (after filtering): 14
+- After deduplication: 14
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 13
+- Relevant signals: 14
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,21 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (12)
+## Cnc Machining (13)
+
+### [HIGH] ISCAR Canada adds two DiPaolo-supplied CNC machines to new Oakville Demo Centre
+- Type: tooling_problem
+- Relevance score: 0.57
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre
+- Matched: cnc, cnc machin, tool
+
+### [HIGH] ENCY 3.2 adds tooling, finishing and workholding updates
+- Type: surface_problem
+- Relevance score: 0.51
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/ency-3-2-adds-tooling-finishing-and-workholding-updates/
+- Matched: finish, milling
 
 ### [HIGH] Milling grade resists heat and built-up edge in difficult materials
 - Type: material_problem
@@ -121,10 +135,3 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/fabtech-2026-preview-plate-processing-system-delivers-power-precision-for-milling-operations
 - Matched: milling
-
-### [MEDIUM] ORNL and Mazak collaborate for WAAM platform
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/ornl-and-mazak-collaborate-for-waam-platform
-- Matched: 5-axis
