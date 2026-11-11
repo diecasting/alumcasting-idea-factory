@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-10T14:33:16.504784+00:00
+Generated: 2026-11-11T13:48:00.691888+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 14
-- After deduplication: 14
+- Relevant (after filtering): 15
+- After deduplication: 15
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 14
+- Relevant signals: 15
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -43,7 +43,14 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/one-drill-body-handles-multiple-exchangeable-tips
 - Matched: cast
 
-## Cnc Machining (13)
+## Cnc Machining (14)
+
+### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
+- Type: tooling_problem
+- Relevance score: 0.63
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-5-axis-milling-machine-features-341-nm-spindle-torque
+- Matched: 5-axis, milling, spindle, tool
 
 ### [HIGH] ISCAR Canada adds two DiPaolo-supplied CNC machines to new Oakville Demo Centre
 - Type: tooling_problem
