@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-12T14:51:14.427035+00:00
+Generated: 2026-11-13T14:12:35.761491+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -49,6 +49,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre
 - Matched: cnc, cnc machin, tool
+
+### [HIGH] Swiss-made HSS-E precision reamers match solid carbide feed rates
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/swiss-made-hss-e-precision-reamers-match-solid-carbide-feed-rates
+- Matched: feed rate, tool
 
 ### [HIGH] Milling grade resists heat and built-up edge in difficult materials
 - Type: material_problem
@@ -112,10 +119,3 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/mini-boring-bars-designed-for-swiss-type-lathes
 - Matched: lathe
-
-### [MEDIUM] Solid carbide milling cutter expands to 16-mm diameter
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutter-expands-to-16-mm-diameter
-- Matched: milling
