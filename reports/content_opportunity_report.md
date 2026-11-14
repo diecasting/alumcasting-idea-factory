@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-13T14:12:35.761491+00:00
+Generated: 2026-11-14T13:11:20.889404+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 12
-- After deduplication: 12
+- Relevant (after filtering): 13
+- After deduplication: 13
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 12
+- Relevant signals: 13
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (12)
+## Cnc Machining (13)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -49,6 +49,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre
 - Matched: cnc, cnc machin, tool
+
+### [HIGH] High-feed milling cutter improves chip removal and cooling
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/high-feed-milling-cutter-improves-chip-removal-and-cooling
+- Matched: cooling, milling
 
 ### [HIGH] Swiss-made HSS-E precision reamers match solid carbide feed rates
 - Type: tooling_problem

@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-5-axis-milling-machine-features-341-nm-spindle-torque",
     "author": null,
     "published_at": "2026-11-10T14:00:00-06:00",
-    "collected_at": "2026-11-13T14:12:36.481036+00:00",
+    "collected_at": "2026-11-14T13:11:21.521953+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.63,
@@ -28,7 +28,7 @@
     "score_reasons": [
       "technical specificity detected (5-axis, machin, milling, spindle)",
       "no engagement signal",
-      "published 3d ago (fresh)"
+      "published 4d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -44,7 +44,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre",
     "author": null,
     "published_at": "2026-11-09T14:00:00-06:00",
-    "collected_at": "2026-11-13T14:12:36.481104+00:00",
+    "collected_at": "2026-11-14T13:11:21.521998+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -62,7 +62,40 @@
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 4d ago (fresh)"
+      "published 5d ago (fresh)"
+    ],
+    "content_brief": null,
+    "search_evidence": null,
+    "site_coverage": null
+  },
+  {
+    "id": "01ff54bc915b1bfc",
+    "source": "rss:https://www.canadianmetalworking.com/rss",
+    "source_type": "rss",
+    "topic": "cnc_machining",
+    "title": "High-feed milling cutter improves chip removal and cooling",
+    "text": "High-feed milling cutter improves chip removal and cooling. Walter has introduced the M6420 Xtra·tec S3, a high-feed indexable insert milling cutter.",
+    "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/high-feed-milling-cutter-improves-chip-removal-and-cooling",
+    "author": null,
+    "published_at": "2026-11-13T14:00:00-06:00",
+    "collected_at": "2026-11-14T13:11:21.521762+00:00",
+    "signal_type": "tooling_problem",
+    "priority": "high",
+    "relevance_score": 0.51,
+    "matched_keywords": [
+      "cooling",
+      "milling"
+    ],
+    "engagement": 0,
+    "heat_score": 0.0,
+    "problem_score": 25.0,
+    "opportunity_score": 25.25,
+    "is_problem_signal": false,
+    "opportunity_rank": null,
+    "score_reasons": [
+      "technical specificity detected (cooling, milling)",
+      "no engagement signal",
+      "published 1d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -78,7 +111,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/swiss-made-hss-e-precision-reamers-match-solid-carbide-feed-rates",
     "author": null,
     "published_at": "2026-11-12T10:00:00-06:00",
-    "collected_at": "2026-11-13T14:12:36.480907+00:00",
+    "collected_at": "2026-11-14T13:11:21.521849+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -94,7 +127,7 @@
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 1d ago (fresh)"
+      "published 2d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -110,7 +143,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-resists-heat-and-built-up-edge-in-difficult-materials",
     "author": null,
     "published_at": "2026-11-03T08:00:00-06:00",
-    "collected_at": "2026-11-13T14:12:36.481465+00:00",
+    "collected_at": "2026-11-14T13:11:21.522229+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -120,14 +153,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 24.0,
-    "opportunity_score": 24.75,
+    "problem_score": 23.68,
+    "opportunity_score": 24.59,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (coating, machin, milling)",
       "no engagement signal",
-      "published 10d ago (aging)"
+      "published 11d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -143,7 +176,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-five-axis-milling-machine-supports-heavy-duty-machining-of-large-components",
     "author": null,
     "published_at": "2026-10-26T10:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.481826+00:00",
+    "collected_at": "2026-11-14T13:11:21.522468+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -153,14 +186,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 21.34,
-    "opportunity_score": 23.42,
+    "problem_score": 21.03,
+    "opportunity_score": 23.27,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 18d ago (aging)"
+      "published 19d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -176,7 +209,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-tools-reduce-power-demand-in-aluminum-machining",
     "author": null,
     "published_at": "2026-10-21T10:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.482008+00:00",
+    "collected_at": "2026-11-14T13:11:21.522573+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -186,14 +219,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.68,
-    "opportunity_score": 22.59,
+    "problem_score": 19.36,
+    "opportunity_score": 22.43,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (aluminum, machin, milling)",
       "no engagement signal",
-      "published 23d ago (aging)"
+      "published 24d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -209,7 +242,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/vertical-turning-centre-combines-large-part-machining-with-integrated-material-handling",
     "author": null,
     "published_at": "2026-10-20T10:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.482060+00:00",
+    "collected_at": "2026-11-14T13:11:21.522608+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -219,14 +252,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.34,
-    "opportunity_score": 22.42,
+    "problem_score": 19.03,
+    "opportunity_score": 22.27,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 24d ago (aging)"
+      "published 25d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -242,7 +275,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-improves-tool-life-in-titanium-machining",
     "author": null,
     "published_at": "2026-10-20T06:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.482083+00:00",
+    "collected_at": "2026-11-14T13:11:21.522625+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -252,14 +285,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.29,
-    "opportunity_score": 22.39,
+    "problem_score": 18.97,
+    "opportunity_score": 22.23,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling, titanium)",
       "no engagement signal",
-      "published 24d ago (aging)"
+      "published 25d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -275,7 +308,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials",
     "author": null,
     "published_at": "2026-10-19T10:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.482109+00:00",
+    "collected_at": "2026-11-14T13:11:21.522642+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -285,14 +318,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 16.01,
-    "opportunity_score": 20.75,
+    "problem_score": 15.69,
+    "opportunity_score": 20.59,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (milling)",
       "no engagement signal",
-      "published 25d ago (aging)"
+      "published 26d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -308,7 +341,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/cnc-control-features-32-in-touchscreen-ai-assisted-programming",
     "author": null,
     "published_at": "2026-10-30T14:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.481554+00:00",
+    "collected_at": "2026-11-14T13:11:21.522290+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -317,14 +350,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.73,
-    "opportunity_score": 21.36,
+    "problem_score": 19.41,
+    "opportunity_score": 21.2,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc)",
       "no engagement signal",
-      "published 14d ago (aging)"
+      "published 15d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -340,7 +373,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/double-sided-high-feed-milling-cutter-reduces-machining-time",
     "author": null,
     "published_at": "2026-10-29T08:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.481682+00:00",
+    "collected_at": "2026-11-14T13:11:21.522373+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -349,14 +382,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 22.32,
-    "opportunity_score": 22.66,
+    "problem_score": 22.0,
+    "opportunity_score": 22.5,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 15d ago (aging)"
+      "published 16d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -372,7 +405,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/mini-boring-bars-designed-for-swiss-type-lathes",
     "author": null,
     "published_at": "2026-10-22T06:00:00-05:00",
-    "collected_at": "2026-11-13T14:12:36.481981+00:00",
+    "collected_at": "2026-11-14T13:11:21.522555+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -381,13 +414,13 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 4.96,
-    "opportunity_score": 13.98,
+    "problem_score": 4.64,
+    "opportunity_score": 13.82,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "no engagement signal",
-      "published 22d ago (aging)"
+      "published 23d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
