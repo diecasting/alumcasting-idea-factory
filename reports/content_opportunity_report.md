@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-17T15:40:59.330032+00:00
+Generated: 2026-11-18T15:20:38.961077+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 13
-- After deduplication: 13
+- Relevant (after filtering): 12
+- After deduplication: 12
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 13
+- Relevant signals: 12
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (13)
+## Cnc Machining (12)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -98,13 +98,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-improves-tool-life-in-titanium-machining
 - Matched: grade, milling
-
-### [HIGH] Solid-carbide milling cutters offer long tool life in hardened materials
-- Type: tooling_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/solid-carbide-milling-cutters-offer-long-tool-life-in-hardened-materials
-- Matched: milling, tool
 
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
 - Type: other
