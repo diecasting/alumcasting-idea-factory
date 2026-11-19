@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-18T15:20:38.961077+00:00
+Generated: 2026-11-19T15:27:08.680747+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -42,6 +42,13 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-5-axis-milling-machine-features-341-nm-spindle-torque
 - Matched: 5-axis, milling, spindle, tool
+
+### [HIGH] Mitsubishi Electric CNC work cell uses AI and humanoid robots
+- Type: tooling_problem
+- Relevance score: 0.57
+- Source: rss:https://www.engineering.com/feed/
+- URL: https://www.engineering.com/mitsubishi-electric-cnc-work-cell-uses-ai-and-humanoid-robots/
+- Matched: cnc, cnc machin, tool
 
 ### [HIGH] ISCAR Canada adds two DiPaolo-supplied CNC machines to new Oakville Demo Centre
 - Type: tooling_problem
@@ -91,13 +98,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/vertical-turning-centre-combines-large-part-machining-with-integrated-material-handling
 - Matched: cnc, material
-
-### [HIGH] Milling grade improves tool life in titanium machining
-- Type: material_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-improves-tool-life-in-titanium-machining
-- Matched: grade, milling
 
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
 - Type: other
