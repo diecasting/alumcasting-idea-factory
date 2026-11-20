@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-19T15:27:08.680747+00:00
+Generated: 2026-11-20T15:03:37.863193+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 12
-- After deduplication: 12
+- Relevant (after filtering): 11
+- After deduplication: 11
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 12
+- Relevant signals: 11
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (12)
+## Cnc Machining (11)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -91,13 +91,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-tools-reduce-power-demand-in-aluminum-machining
 - Matched: milling, tool
-
-### [HIGH] Vertical turning centre combines large-part machining with integrated material handling
-- Type: material_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/vertical-turning-centre-combines-large-part-machining-with-integrated-material-handling
-- Matched: cnc, material
 
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
 - Type: other
