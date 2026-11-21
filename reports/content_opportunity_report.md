@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-20T15:03:37.863193+00:00
+Generated: 2026-11-21T14:24:48.682590+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 11
-- After deduplication: 11
+- Relevant (after filtering): 10
+- After deduplication: 10
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 11
+- Relevant signals: 10
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (11)
+## Cnc Machining (10)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -42,13 +42,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-5-axis-milling-machine-features-341-nm-spindle-torque
 - Matched: 5-axis, milling, spindle, tool
-
-### [HIGH] Mitsubishi Electric CNC work cell uses AI and humanoid robots
-- Type: tooling_problem
-- Relevance score: 0.57
-- Source: rss:https://www.engineering.com/feed/
-- URL: https://www.engineering.com/mitsubishi-electric-cnc-work-cell-uses-ai-and-humanoid-robots/
-- Matched: cnc, cnc machin, tool
 
 ### [HIGH] ISCAR Canada adds two DiPaolo-supplied CNC machines to new Oakville Demo Centre
 - Type: tooling_problem
