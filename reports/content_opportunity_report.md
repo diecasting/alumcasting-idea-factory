@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-22T14:17:47.979993+00:00
+Generated: 2026-11-23T17:40:29.607299+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 10
-- After deduplication: 10
+- Relevant (after filtering): 8
+- After deduplication: 8
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 10
+- Relevant signals: 8
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (10)
+## Cnc Machining (8)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -78,13 +78,6 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-five-axis-milling-machine-supports-heavy-duty-machining-of-large-components
 - Matched: milling, tool
 
-### [HIGH] Milling tools reduce power demand in aluminum machining
-- Type: tooling_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-tools-reduce-power-demand-in-aluminum-machining
-- Matched: milling, tool
-
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
 - Type: other
 - Relevance score: 0.46
@@ -98,10 +91,3 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/double-sided-high-feed-milling-cutter-reduces-machining-time
 - Matched: milling
-
-### [MEDIUM] Mini boring bars designed for Swiss-type lathes
-- Type: other
-- Relevance score: 0.46
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/mini-boring-bars-designed-for-swiss-type-lathes
-- Matched: lathe
