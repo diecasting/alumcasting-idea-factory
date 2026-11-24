@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-23T17:40:29.607299+00:00
+Generated: 2026-11-24T17:12:02.612734+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -50,19 +50,19 @@ _No problem signals carried site-coverage evidence in this run._
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre
 - Matched: cnc, cnc machin, tool
 
+### [HIGH] Free browser tool nests DXF parts for plasma, laser, and waterjet tables
+- Type: tooling_problem
+- Relevance score: 0.51
+- Source: rss:https://www.canadianmetalworking.com/rss
+- URL: https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/automationsoftware/free-browser-tool-nests-dxf-parts-for-plasma-laser-and-waterjet-tables
+- Matched: cnc, tool
+
 ### [HIGH] High-feed milling cutter improves chip removal and cooling
 - Type: tooling_problem
 - Relevance score: 0.51
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/high-feed-milling-cutter-improves-chip-removal-and-cooling
 - Matched: cooling, milling
-
-### [HIGH] Swiss-made HSS-E precision reamers match solid carbide feed rates
-- Type: tooling_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/swiss-made-hss-e-precision-reamers-match-solid-carbide-feed-rates
-- Matched: feed rate, tool
 
 ### [HIGH] Milling grade resists heat and built-up edge in difficult materials
 - Type: material_problem
