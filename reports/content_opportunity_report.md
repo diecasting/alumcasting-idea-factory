@@ -1,16 +1,16 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-24T17:12:02.612734+00:00
+Generated: 2026-11-25T16:56:49.366464+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
-- Relevant (after filtering): 8
-- After deduplication: 8
+- Relevant (after filtering): 7
+- After deduplication: 7
 
 ## Problem Signals
 
 - Raw signals: 110
-- Relevant signals: 8
+- Relevant signals: 7
 - Problem signals: 0
 - Problem signal rate: 0.0%
 
@@ -34,7 +34,7 @@ _Deterministic site-coverage and content-gap check for problem signals. Coverage
 
 _No problem signals carried site-coverage evidence in this run._
 
-## Cnc Machining (8)
+## Cnc Machining (7)
 
 ### [HIGH] Double-column 5-axis milling machine features 341 N·m spindle torque
 - Type: tooling_problem
@@ -70,13 +70,6 @@ _No problem signals carried site-coverage evidence in this run._
 - Source: rss:https://www.canadianmetalworking.com/rss
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-resists-heat-and-built-up-edge-in-difficult-materials
 - Matched: grade, milling
-
-### [HIGH] Double-column five-axis milling machine supports heavy-duty machining of large components
-- Type: tooling_problem
-- Relevance score: 0.51
-- Source: rss:https://www.canadianmetalworking.com/rss
-- URL: https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-five-axis-milling-machine-supports-heavy-duty-machining-of-large-components
-- Matched: milling, tool
 
 ### [MEDIUM] CNC control features 32-in. touchscreen, AI-assisted programming
 - Type: other
