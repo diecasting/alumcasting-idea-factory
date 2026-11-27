@@ -9,7 +9,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/double-column-5-axis-milling-machine-features-341-nm-spindle-torque",
     "author": null,
     "published_at": "2026-11-10T14:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.835152+00:00",
+    "collected_at": "2026-11-27T16:21:14.475799+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.63,
@@ -21,14 +21,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 22.05,
-    "opportunity_score": 26.77,
+    "problem_score": 21.72,
+    "opportunity_score": 26.61,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (5-axis, machin, milling, spindle)",
       "no engagement signal",
-      "published 16d ago (aging)"
+      "published 17d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -44,7 +44,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/news/metalworking/iscar-canada-adds-two-dipaolo-supplied-cnc-machines-to-new-oakville-demo-centre",
     "author": null,
     "published_at": "2026-11-09T14:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.835193+00:00",
+    "collected_at": "2026-11-27T16:21:14.475850+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.57,
@@ -55,14 +55,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 21.71,
-    "opportunity_score": 25.11,
+    "problem_score": 21.38,
+    "opportunity_score": 24.94,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc, machin)",
       "no engagement signal",
-      "published 17d ago (aging)"
+      "published 18d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -78,7 +78,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/why-your-proven-cnc-programs-still-need-a-toolpath-audit",
     "author": null,
     "published_at": "2026-11-26T06:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.834735+00:00",
+    "collected_at": "2026-11-27T16:21:14.475259+00:00",
     "signal_type": "question",
     "priority": "high",
     "relevance_score": 0.56,
@@ -98,7 +98,7 @@
       "troubleshooting language detected",
       "technical specificity detected (cnc)",
       "no engagement signal",
-      "published 0d ago (fresh)"
+      "published 1d ago (fresh)"
     ],
     "content_brief": {
       "problem": "Why your proven CNC programs still need a toolpath audit",
@@ -182,7 +182,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/automationsoftware/free-browser-tool-nests-dxf-parts-for-plasma-laser-and-waterjet-tables",
     "author": null,
     "published_at": "2026-11-24T08:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.834824+00:00",
+    "collected_at": "2026-11-27T16:21:14.475359+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -199,7 +199,7 @@
     "score_reasons": [
       "technical specificity detected (cnc)",
       "no engagement signal",
-      "published 2d ago (fresh)"
+      "published 3d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -215,7 +215,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/high-feed-milling-cutter-improves-chip-removal-and-cooling",
     "author": null,
     "published_at": "2026-11-13T14:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.834997+00:00",
+    "collected_at": "2026-11-27T16:21:14.475614+00:00",
     "signal_type": "tooling_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -225,14 +225,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 23.05,
-    "opportunity_score": 24.27,
+    "problem_score": 22.72,
+    "opportunity_score": 24.11,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cooling, milling)",
       "no engagement signal",
-      "published 13d ago (aging)"
+      "published 14d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -248,7 +248,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/milling-grade-resists-heat-and-built-up-edge-in-difficult-materials",
     "author": null,
     "published_at": "2026-11-03T08:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.835432+00:00",
+    "collected_at": "2026-11-27T16:21:14.476133+00:00",
     "signal_type": "material_problem",
     "priority": "high",
     "relevance_score": 0.51,
@@ -258,14 +258,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 19.63,
-    "opportunity_score": 22.57,
+    "problem_score": 19.3,
+    "opportunity_score": 22.4,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (coating, machin, milling)",
       "no engagement signal",
-      "published 23d ago (aging)"
+      "published 24d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -281,7 +281,7 @@
     "url": "https://www.canadianmetalworking.com/canadianfabricatingandwelding/product/fabricating/large-format-5-axis-laser-cutting-cell-accommodates-workpiece-and-fixturing",
     "author": null,
     "published_at": "2026-11-25T12:00:00-06:00",
-    "collected_at": "2026-11-26T16:35:56.834755+00:00",
+    "collected_at": "2026-11-27T16:21:14.475282+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -297,7 +297,7 @@
     "score_reasons": [
       "technical specificity detected (5-axis)",
       "no engagement signal",
-      "published 1d ago (fresh)"
+      "published 2d ago (fresh)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -313,7 +313,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/metalworking/cnc-control-features-32-in-touchscreen-ai-assisted-programming",
     "author": null,
     "published_at": "2026-10-30T14:00:00-05:00",
-    "collected_at": "2026-11-26T16:35:56.835492+00:00",
+    "collected_at": "2026-11-27T16:21:14.476203+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -322,14 +322,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 15.37,
-    "opportunity_score": 19.18,
+    "problem_score": 15.04,
+    "opportunity_score": 19.02,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (cnc)",
       "no engagement signal",
-      "published 27d ago (aging)"
+      "published 28d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,
@@ -345,7 +345,7 @@
     "url": "https://www.canadianmetalworking.com/canadianmetalworking/product/cuttingtools/double-sided-high-feed-milling-cutter-reduces-machining-time",
     "author": null,
     "published_at": "2026-10-29T08:00:00-05:00",
-    "collected_at": "2026-11-26T16:35:56.835580+00:00",
+    "collected_at": "2026-11-27T16:21:14.476311+00:00",
     "signal_type": "other",
     "priority": "medium",
     "relevance_score": 0.46,
@@ -354,14 +354,14 @@
     ],
     "engagement": 0,
     "heat_score": 0.0,
-    "problem_score": 17.95,
-    "opportunity_score": 20.48,
+    "problem_score": 17.62,
+    "opportunity_score": 20.31,
     "is_problem_signal": false,
     "opportunity_rank": null,
     "score_reasons": [
       "technical specificity detected (machin, milling)",
       "no engagement signal",
-      "published 28d ago (aging)"
+      "published 29d ago (aging)"
     ],
     "content_brief": null,
     "search_evidence": null,

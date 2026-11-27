@@ -1,6 +1,6 @@
 # Manufacturing Content Opportunity Report
 
-Generated: 2026-11-26T16:35:54.841064+00:00
+Generated: 2026-11-27T16:21:12.916717+00:00
 
 - Raw signals collected: 110
 - Normalized: 110
@@ -28,7 +28,7 @@ Generated: 2026-11-26T16:35:54.841064+00:00
   - troubleshooting language detected
   - technical specificity detected (cnc)
   - no engagement signal
-  - published 0d ago (fresh)
+  - published 1d ago (fresh)
 - Source: rss:https://www.canadianmetalworking.com/rss
 - Published: 2026-11-26T06:00:00-06:00
 - URL: https://www.canadianmetalworking.com/canadianmetalworking/article/metalworking/why-your-proven-cnc-programs-still-need-a-toolpath-audit
